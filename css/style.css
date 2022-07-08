@@ -1,0 +1,61 @@
+/* ----------> BODY <----------*/
+
+body{
+  background-color: rgb(102 102 102);
+}
+/* ----------> BANNER <----------*/
+
+.banner {
+  background-color: #212529;
+
+}
+
+.imgbanner{ 
+  width: 100%;
+  height: 250px;
+  padding: 15px 30px;
+  border-radius: 85px;
+}
+
+/* ----------> NAVEGADOR <----------*/
+
+#icono{
+  width: 40px;
+  height: 32px;
+}
+
+#navegador{
+  max-inline-size:inherit;
+}
+
+#navegadoritems{
+  margin: 0px 10px;
+}
+
+/* ----------> MAIN <----------*/
+
+/* main{
+  background-color: rgb(0, 65, 102);
+} */
+
+/* section{
+
+}
+
+aside{
+  
+} */
+
+/* ----------> FOOTER <----------*/
+footer{
+  width: 100%;
+  text-align: right;
+  position: fixed;
+  bottom: 0px;
+  background-color: #212529;
+  color: white;
+}
+
+footer p{
+  margin: 10px 40px;
+}
