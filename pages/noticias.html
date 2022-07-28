@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/iconhead.png">
+    <link href="/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>NOTICIAS</title>
+</head>
+<body>
+    
+    <header class="p-3 bg-dark text-white">
+        <div class="banner">
+            <img class="imgbanner" src="../img/banner.png" alt="banner">
+        </div>    
+            <div id="navegador" class="container">
+              <div id="navegadoritems" class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="../index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <img src="../img/icon.png" alt="Icono" id="icono">
+<!--                   <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg> -->                
+                </a>
+                <ul id="ulNav" class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                  <li><a href="../index.html" class="nav-link px-2 text-secondary">INICIO</a></li>
+                  <li><a href="../pages/consolas.html" class="nav-link px-2 text-white">CONSOLAS</a></li>
+                  <li><a href="../pages/noticias.html" class="nav-link px-2 text-white">NOTICIAS</a></li>
+                  <li><a href="../pages/contacto.html" class="nav-link px-2 text-white">CONTACTO</a></li>
+                </ul>
+        
+                <form id="navegadorsearch" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                  <input type="search" class="form-control form-control-dark text-white bg-dark" placeholder="Buscar..." aria-label="Search">
+                </form>
+        
+                <div id="navegadorbtn" class="text-end">
+                  <button type="button" class="btnSesion" onclick="sesion()">INICIA SESIÓN</button>
+                  <button type="button" class="btnRegistro" onclick="registro()">REGISTRATE</button>
+                </div>
+              </div>
+            </div>
+          </header>
+<!------------ MAIN ------------>
+<main>
+  
+<!------------ ASIDE ------------>
+
+<aside>
+  <ul class="asideUl">
+    <a href="../index.html"><li class="asideLi"><i class="fa-solid fa-house-chimney"></i> Inicio</li></a>
+    <li class="asideLi"  onclick="abrirMenu()"><i class="fa-solid fa-circle-play"></i> Consolas
+      <ul class="submenu" id="menuConsolas">
+        <a href="../pages/nintendo/nintendo.html"><li class="asideLi"><i class="fa-solid fa-gamepad"></i> Nintendo</li></a>      
+        <a href="../pages/microsoft/microsoft.html"><li class="asideLi"><i class="fa-brands fa-xbox"></i> Microsoft</li></a>        
+        <a href="../pages/sony/sony.html"><li class="asideLi"><i class="fa-brands fa-playstation"></i> Sony</li></a>        
+        <a href="../pages/pc/pc.html"><li class="asideLi"><i class="fa-solid fa-laptop"></i> PC</li></a>
+      </ul>
+    </li>
+    <a href="../pages/noticias.html"><li  class="asideLi"><i class="fa-solid fa-newspaper"></i> Noticias</li></a>
+    <a href="../pages/contacto.html"><li  class="asideLi"><i class="fa-solid fa-user-astronaut"></i> Contacto</li></a>
+  </ul>
+</aside>
+
+<!------------ SECTION ------------>
+
+  <section>
+    <h1>Noticias</h1>
+    <a href="https://as.com/meristation/2022/07/28/noticias/1659016832_330285.html" target="_blank" onclick="salirDeMiWeb(event)" class="noticiasLink"><h3><i class="fa-regular fa-newspaper"></i> Rebajas de Nintendo Switch: 10 ofertas de la eShop a tener en cuenta para este fin de semana</h3></a>
+    
+    <a href="https://www.levelup.com/noticias/690349/Steam-ya-es-compatible-con-los-controles-clasicos-de-Nintendo-para-Switch-Online" target="_blank" onclick="salirDeMiWeb(event)"  class="noticiasLink"><h3><i class="fa-regular fa-newspaper"></i> Steam ya es compatible con los controles clásicos de Nintendo para Switch Online</h3></a>
+    
+    <a href="https://www.3djuegos.com/noticias-ver/223841/gta-6-tendra-a-una-mujer-latina-de-co-protagonista-segun/" target="_blank" onclick="salirDeMiWeb(event)"  class="noticiasLink"><h3><i class="fa-regular fa-newspaper"></i> GTA 6 tendrá a una mujer latina de co-protagonista según Bloomberg, y hay más detalles del videojuego</h3></a>
+    
+    <a href="https://www.3djuegos.com/noticias-ver/223842/estos-son-los-lanzamientos-de-videojuegos-destacados-de/" target="_blank" onclick="salirDeMiWeb(event)"  class="noticiasLink"><h3><i class="fa-regular fa-newspaper"></i> Estos son los lanzamientos de videojuegos destacados de agosto</h3></a>
+    
+    <a href="https://www.3djuegos.com/noticias-ver/223852/ofertas-en-juegos-para-ps4-y-ps5-en-ps-store-6/" target="_blank" onclick="salirDeMiWeb(event)"  class="noticiasLink"><h3><i class="fa-regular fa-newspaper"></i> Ofertas en juegos para PS4 y PS5 en PS Store: 6 recomendaciones y un reto con el cómico Ángel Martín</h3></a>
+    
+    <a href="https://www.3djuegos.com/noticias-ver/223849/estos-son-los-juegos-de-nintendo-switch-mas-descargados-en/" target="_blank" onclick="salirDeMiWeb(event)"  class="noticiasLink"><h3><i class="fa-regular fa-newspaper"></i> Estos son los juegos de Nintendo Switch más descargados en Japón durante la primera mitad de 2022</h3></a>
+    
+    <a href="https://rpp.pe/videojuegos/playstation/ps5-ya-tiene-soporte-nativo-para-resolucion-1440p-noticia-1421080" target="_blank" onclick="salirDeMiWeb(event)"  class="noticiasLink"><h3><i class="fa-regular fa-newspaper"></i> PlayStation 5 recibirá el soporte nativo para resolución 1440p y ya se puede probar en su Beta</h3></a>
+    
+    <a href="https://vandal.elespanol.com/noticia/1350755422/xbox-series-xs-estan-siendo-las-consolas-mas-exitosas-de-la-historia-de-microsoft/" target="_blank" onclick="salirDeMiWeb(event)"  class="noticiasLink"><h3><i class="fa-regular fa-newspaper"></i> Xbox Series X/S están siendo las consolas más exitosas de la historia de Microsoft</h3></a>
+    
+    <a href="https://www.3djuegos.com/noticias-ver/223887/estos-son-los-4-juegos-de-xbox-gratis-para-miembros-de-game/" target="_blank" onclick="salirDeMiWeb(event)"  class="noticiasLink"><h3><i class="fa-regular fa-newspaper"></i> Estos son los 4 juegos de Xbox gratis para miembros de Game Pass Ultimate y Live Gold en agosto</h3></a>
+    
+    <a href="https://rpp.pe/videojuegos/juegos/pay-to-win-que-es-y-por-que-debes-conocerlo-noticia-1420961" target="_blank" onclick="salirDeMiWeb(event)"  class="noticiasLink"><h3><i class="fa-regular fa-newspaper"></i> Qué es el pay-to-win y por qué es un término que debes conocer en videojuegos</h3></a>
+    
+    <a href="https://www.hobbyconsolas.com/noticias/xbox-anuncia-juegos-gratis-games-gold-agosto-2022-xbox-series-xs-one-1100907" target="_blank" onclick="salirDeMiWeb(event)"  class="noticiasLink"><h3><i class="fa-regular fa-newspaper"></i> Anunciados los Games with Gold de agosto 2022 en Xbox Series X|S y Xbox One</h3></a>
+
+
+  </section>
+  </main>
+
+<!------------ FOOTER ------------>
+        <footer>
+            <div class="footer"></div>
+            <p>Alumno: Daniel Palau
+            <br>
+            Mail: palaudanny@gmail.com 
+            <br>
+            Comision E
+            <br>
+            Revolución Digital
+            </p>
+            </div>
+        </footer>
+    
+<!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

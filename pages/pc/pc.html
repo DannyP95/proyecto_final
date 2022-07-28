@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/iconhead.png">
+    <link href="/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>PC</title>
+</head>
+<body>
+    
+    <header class="p-3 bg-dark text-white">
+        <div class="banner">
+            <img class="imgbanner" src="../../img/banner.png" alt="banner">
+        </div>    
+            <div id="navegador" class="container">
+              <div id="navegadoritems" class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="../../index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <img src="../../img/icon.png" alt="Icono" id="icono">
+<!--                   <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg> -->                
+                </a>
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="../../index.html" class="nav-link px-2 text-secondary">INICIO</a></li>
+                    <li><a href="../../pages/consolas.html" class="nav-link px-2 text-white">CONSOLAS</a></li>
+                    <li><a href="../../pages/noticias.html" class="nav-link px-2 text-white">NOTICIAS</a></li>
+                    <li><a href="../../pages/contacto.html" class="nav-link px-2 text-white">CONTACTO</a></li>
+                  </ul>
+        
+                <form id="navegadorsearch" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                  <input type="search" class="form-control form-control-dark text-white bg-dark" placeholder="Buscar..." aria-label="Search">
+                </form>
+        
+                <div id="navegadorbtn" class="text-end">
+                  <button type="button" class="btnSesion" onclick="sesion()">INICIA SESIÓN</button>
+                  <button type="button" class="btnRegistro" onclick="registro()">REGISTRATE</button>
+                </div>
+              </div>
+            </div>
+          </header>
+<!------------ MAIN ------------>
+<main>
+  
+<!------------ ASIDE ------------>
+
+<aside>
+  <ul class="asideUl">
+    <a href="../../index.html"><li class="asideLi"><i class="fa-solid fa-house-chimney"></i> Inicio</li></a>
+    <li class="asideLi"  onclick="abrirMenu()"><i class="fa-solid fa-circle-play"></i> Consolas
+      <ul class="submenu" id="menuConsolas">
+        <a href="../../pages/nintendo/nintendo.html"><li class="asideLi"><i class="fa-solid fa-gamepad"></i> Nintendo</li></a>      
+        <a href="../../pages/microsoft/microsoft.html"><li class="asideLi"><i class="fa-brands fa-xbox"></i> Microsoft</li></a>        
+        <a href="../../pages/sony/sony.html"><li class="asideLi"><i class="fa-brands fa-playstation"></i> Sony</li></a>        
+        <a href="../../pages/pc/pc.html"><li class="asideLi"><i class="fa-solid fa-laptop"></i> PC</li></a>
+      </ul>
+    </li>
+    <a href="../../pages/noticias.html"><li  class="asideLi"><i class="fa-solid fa-newspaper"></i> Noticias</li></a>
+    <a href="../../pages/contacto.html"><li  class="asideLi"><i class="fa-solid fa-user-astronaut"></i> Contacto</li></a>
+  </ul>
+
+  <hr>
+  <ul>
+    <li class="asideIndex"><a href="#crisis">Crisis de la industria</a></li>
+    <li class="asideIndex"><a href="#nuevos">Nuevos géneros</a></li>
+    <li class="asideIndex"><a href="#contemporaneos">Juegos contemporáneos</a></li>
+    <li class="asideIndex"><a href="#actual">Distribución actual</a></li>
+    <li class="asideIndex"><a href="#btn_tabla">Mascotas</a></li>
+  </ul>
+</aside>
+
+<!------------ SECTION ------------>
+
+  <section>
+    <h1>Juegos en PC</h1>
+    <p>La primera generación de juegos de ordenador eran a menudo aventuras de texto o ficción interactiva, en la que el jugador se comunicaba con el ordenador mediante la introducción de comandos a través de un teclado. Una de los primeras aventuras de texto, Adventure, fue desarrollada para la minicomputadora PDP-11 por Will Crowther en 1976, y ampliada por Don Woods en 1977.<br>
+    Los primeros juegos de ordenador se basaron en los juegos arcade de éxito en ese momento, haciendo ports y clones de juegos de arcade populares. En 1982, los juegos más vendidos para la Atari 400 eran ports de Frogger y Centipede, mientras que el juego más vendido para la Texas Instruments TI-99/4A fue un clon de Space Invaders llamado TI Invaders. Ese mismo año, Pac-Man fue portado a la Atari 800, [18] mientras que Donkey Kong fue autorizado para la Coleco Adam. A finales de 1981, Atari intentó tomar acciones legales en contra de los clones no autorizados, en particular los clones de Pac-Man, a pesar de que algunos de éstos eran anteriores a los derechos exclusivos de Atari para las versiones caseras del juego de Namco.</p>
+    <h2 id="crisis">Crisis de la industria</h2>
+    <p>La popularidad de los ordenadores personales para educación aumentó de forma espectacular, a medida que el mercado de los videojuegos se inundaba con juegos de cartucho de baja calidad creados por numerosas empresas que intentaban entrar en el mercado, dándose un exceso de producción de productos defectuosos de alto perfil como las adaptaciones de Pac-Man y de E.T. para la Atari 2600. En 1983, el interés de los consumidores en los videojuegos de consola se redujo a mínimos históricos, mientras que aumentó el interés en los juegos de ordenador. Los efectos de la crisis se limitaban en gran medida al mercado de las consolas, en empresas establecidas como Atari que tuvo récord de pérdidas en los años subsiguientes. Por el contrario, el mercado de los ordenadores personales estaba en auge, ya que las ventas de computadoras de color de bajo coste, como el Commodore 64 se elevó a niveles récord, y los desarrolladores como Electronic Arts se beneficiaron del creciente interés en la plataforma.<br>
+    El mercado de las consolas experimentó un resurgimiento en los Estados Unidos con el lanzamiento de la Nintendo Entertainment System (NES). En Europa, los juegos de ordenador continuaron en auge durante muchos años. Equipos como el ZX Spectrum y el BBC Micro tuvieron éxito en el mercado europeo, donde la NES no fue tan exitosa a pesar de su monopolio en Japón y América del Norte. La única consola de 8-bits que tuvo éxito en Europa fue la Sega Master System. Mientras tanto, en Japón, tanto consolas como ordenadores se convirtieron en industrias de gran relevancia, con el mercado de las consolas dominado por Nintendo y el de los ordenadores dominado por los PC-88 (1981) y PC-98 (1982) de NEC. Una diferencia clave entre los equipos occidentales y japoneses en ese momento era la resolución de la pantalla, siendo los sistemas japoneses de una resolución mayor de 640x400 para acomodar el texto japonés, lo que a su vez tuvo impacto en el diseño de los juegos y permitió gráficos más detallados. Los ordenadores japoneses también utilizaban como tarjeta de sonido los sintonizadores FM de Yamaha de los años 80. </p>
+    <h2 id="nuevos">Nuevos géneros</h2>
+    <p>El aumento de la adopción del ratón de ordenador, impulsado en parte por el éxito de juegos de aventura como la serie King Quest, de gran éxito, y las pantallas de más alta resolución, permitieron a la industria incluir interfaces gráficas de calidad más alta en las nuevas versiones. Mientras tanto, el ordenador Commodore Amiga logró un gran éxito en el mercado desde su lanzamiento en 1985, contribuyendo a la rápida adopción de estas nuevas tecnologías de interfaz. Aunque en un principio obstaculizados por el mal sonido del altavoz de los PCs y los limitados gráficos EGA (en comparación con los ordenadores más conocidos de la época), el estándar VGA permitió que los gráficos de los PCs superaran al Amiga.<br>
+    En 1991, id Software hizo un juego de acción en primera persona, Hovertank 3D, que fue el primero de una línea de juegos de gran influencia en el género. Había también otras compañías que hicieron los primeros shooters en primera persona, como Star Cruiser de Arsys Software en 1988, que contaba con gráficos poligonales en 3D, y Day of the Viper de Accolade en 1989. Id Software pasó a desarrollar Wolfenstein 3D en 1992, lo que ayudó a popularizar el género, y puso en marcha un género que se convertiría en uno de los de mayor venta en los tiempos modernos. El juego fue originalmente distribuido a través del modelo de distribución shareware, permitiendo a los jugadores probar una parte limitada del juego de forma gratuita, pero requería el pago para jugar el resto, y fue uno de los primeros usos de gráficos con mapeado de texturas en un juego popular, junto con Ultima Underworld. <br>
+    Mientras que las consolas líderes Sega y Nintendo mantenían su velocidad de CPU a 3-7 MHz, el procesador de PC 486 se ejecutaba mucho más rápido, lo que le permitía realizar muchos más cálculos por segundo. La versión de 1993 de Doom en PC fue un gran avance en los gráficos 3D, y pronto fue portado a las diferentes consolas de juegos, con un cambio general hacia un mayor realismo. En el mismo período de tiempo, juegos como Myst aprovecharon el nuevo formato CD-ROM para incluir muchos más activos (sonido, imágenes, vídeo) para una experiencia de juego más rica. <br>
+    Para mejorar la experiencia inmersiva con sus gráficos realistas y sonidos electrónicos, los primeros juegos de PC incluían extras como las gafas de sol que se entregaban en juegos como "Guía del autoestopista galáctico" o la novela corta de ciencia ficción incluida con Elite. Estos extras gradualmente se hicieron menos frecuentes, pero muchos juegos se vendían en cajas tradicionales de gran tamaño que se utilizaban para mantener la atracción por los extras. Hoy en día, estos extras normalmente solo se encuentran en las ediciones especiales de juegos, como Battlechests de Blizzard. </p>
+    <h2 id="contemporaneo">Juegos contemporáneos</h2>
+    <p>En 1996, el ascenso de Microsoft Windows y el éxito de títulos de consola en 3D como Super Mario 64 provocó un gran interés en los gráficos 3D acelerados por hardware en ordenadores compatibles con IBM PC, y pronto dio lugar a intentos de producir soluciones asequibles con la ATI Rage, Matrox Mystique y S3 Virge. Tomb Raider, que fue lanzado en 1996, fue uno de los primeros juegos en 3D shooter en tercera persona y fue elogiado por sus gráficos revolucionarios. Conforme maduraban las bibliotecas de gráficos 3D como DirectX y OpenGL, y dejaban a otras interfaces propietarias fuera del mercado, estas plataformas ganaron mayor aceptación en el mercado, sobre todo con las mejoras demostradas en juegos como Unreal. Sin embargo, los cambios importantes en el sistema operativo Microsoft Windows, para entonces el líder del mercado, hicieron que muchos juegos antiguos de MS-DOS no pudieran jugarse en Windows NT ni, más tarde, en Windows XP (sin usar un emulador, como DOSBox). <br>
+    Las aceleradoras gráficas más rápidas y la mejora de la tecnología de los CPU dio lugar a mayores niveles de realismo en los juegos de ordenador. Durante esta época, las mejoras introducidas en productos como la ATI Radeon R300 y la serie NVIDIA GeForce 6 permitió a los desarrolladores incrementar la complejidad de los motores de juego modernos. Los juegos de PC actualmente tienen una fuerte tendencia hacia la mejora de los gráficos 3D.<br>
+    A diferencia de la presión generalmente aceptada para la mejora del rendimiento gráfico, el uso de motores de física en juegos de ordenador se ha convertido en un tema de debate desde el anuncio y aparición en 2005 de la PPU nVidia PhysX, compitiendo ostensiblemente con el middleware como el motor de física Havok. Cuestiones tales como la dificultad para asegurar experiencias consistentes para todos los jugadores, y el beneficio incierto de las tarjetas de primera generación PhysX en juegos como el Tom Clancy's Ghost Recon Advanced Warfighter y City of Villains, provocaron discusiones sobre el valor de dicha tecnología.<br>
+    Del mismo modo, muchos editores de juegos empezaron a experimentar con nuevas formas de comercialización. La principal de estas estrategias alternativas es el juego episódico, una adaptación del viejo concepto de paquete de expansión, en el que se proporciona el contenido del juego en pequeñas cantidades, pero a un precio proporcionalmente inferior. Algunos títulos se aprovecharon de la idea, con resultados mixtos debido a la preocupación por la cantidad de contenido proporcionado por el precio ofrecido.</p>
+    <!-- CAROUSEL -->
+    
+    <h2 id="actual">Plataformas Actuales de distribución digital de Videojuegos</h2>
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="https://store.steampowered.com/?l=spanish" target="_blank" onclick="salirDeMiWeb(event)"><img src="https://cdn.akamai.steamstatic.com/store/home/store_home_share.jpg" class="d-block w-100" alt="STEAM"></a>
+          </div>
+          <div class="carousel-item">
+            <a href="https://www.epicgames.com/site/es-ES/home" target="_blank" onclick="salirDeMiWeb(event)"><img src="https://www.bankmagazine.com.ar/wp-content/uploads/2021/04/maxresdefault.jpg" class="d-block w-100" alt="EPIC"></a>
+          </div>
+          <div class="carousel-item">
+            <a href="https://www.origin.com/esp/es-es/store" target="_blank" onclick="salirDeMiWeb(event)"><img src="https://www.gamerfocus.co/wp-content/uploads/2014/03/origin-exclusivo-ventas-digitales-descarga-abril-4-1.jpg" class="d-block w-100" alt="ORIGIN"></a>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+  </div>
+  <br>
+  <br>
+  <button id="btn_tabla" class="btn_tabla" onclick="mostrarTabla()">Mostrar información</button>
+    <br>
+    
+    <table id="tabla" class="tabla">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Breve descripción</th>
+          <th>Imagen</th>
+        </tr>
+      </thead>
+      <tr>
+        <td><b>Steve <br> & <br> Alex</b></td>
+        <td><b>Minecraft</b> es un videojuego de construcción de tipo <b>mundo abierto</b> o <b>sandbox</b> creado originalmente por el sueco <b>Markus Persson</b> (conocido comúnmente como <b>Notch</b>), y posteriormente desarrollado por <b>Mojang Studios</b> (actualmente parte de <b>Microsoft</b>).Fue lanzado el 17 de mayo de 2009, y después de numerosos cambios, su primera versión estable <b>1.0</b>fue publicada el 18 de noviembre de 2011. <br>
+        El jugador es el personaje controlado a la hora de jugar a Minecraft, se los conocen como Steve (un nombre puesto por Notch a modo de broma pero luego oficializado en el menú de "cambiar aspecto" en minecraft.net, en el juego como el nombre predeterminado en Bedrock Edition, y su nombre en Super Smash Bros. Ultimate) y Alex, con todos los aspectos no cambiados siendo alguno de los dos aspectos.</td>
+        <td><img class="imgTable" src="https://elcomercio.pe/resizer/Fp6sDdPyC8x9W7dIPe2ZgsS-4G4=/1200x1200/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/ZBFXMWTXSRGJ3COHIW253D3QGI.jpg" alt="Steve y Alex"></th>
+      </tr>
+    </table>
+  </section>
+  </main>
+
+<!------------ FOOTER ------------>
+        <footer>
+            <div class="footer"></div>
+            <p>Alumno: Daniel Palau
+            <br>
+            Mail: palaudanny@gmail.com 
+            <br>
+            Comision E
+            <br>
+            Revolución Digital
+            </p>
+            </div>
+        </footer>
+    
+<!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="../../js/script.js"></script>
+</body>
+</html>

@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/iconhead.png">
     <link href="/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>MUNDO CONSOLAS</title>
@@ -22,11 +24,10 @@
 <!--                   <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg> -->                
                 </a>
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                  <li><a href="#" class="nav-link px-2 text-secondary">INICIO</a></li>
-                  <li><a href="#" class="nav-link px-2 text-white">CONSOLAS</a></li>
-                  <li><a href="#" class="nav-link px-2 text-white">NOTICIAS</a></li>
-                  <li><a href="#" class="nav-link px-2 text-white">SOBRE NOSOTROS</a></li>
-                  <li><a href="#" class="nav-link px-2 text-white">CONTACTO</a></li>
+                  <li><a href="./index.html" class="nav-link px-2 text-secondary">INICIO</a></li>
+                  <li><a href="./pages/consolas.html" class="nav-link px-2 text-white">CONSOLAS</a></li>
+                  <li><a href="./pages/noticias.html" class="nav-link px-2 text-white">NOTICIAS</a></li>
+                  <li><a href="./pages/contacto.html" class="nav-link px-2 text-white">CONTACTO</a></li>
                 </ul>
         
                 <form id="navegadorsearch" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
@@ -34,20 +35,110 @@
                 </form>
         
                 <div id="navegadorbtn" class="text-end">
-                  <button type="button" class="btn btn-outline-light me-2">INICIA SESIÓN</button>
-                  <button type="button" class="btn btn-warning">REGISTRATE</button>
+                  <button type="button" class="btnSesion" onclick="sesion()">INICIA SESIÓN</button>
+                  <button type="button" class="btnRegistro" onclick="registro()">REGISTRATE</button>
                 </div>
               </div>
             </div>
           </header>
 <!------------ MAIN ------------>
-
 <main>
+  
+<!------------ ASIDE ------------>
+
+<aside>
+  <ul class="asideUl">
+    <a href="./index.html"><li class="asideLi"><i class="fa-solid fa-house-chimney"></i> Inicio</li></a>
+    <li class="asideLi"  onclick="abrirMenu()"><i class="fa-solid fa-circle-play"></i> Consolas
+      <ul class="submenu" id="menuConsolas">
+        <a href="./pages/nintendo/nintendo.html"><li class="asideLi"><i class="fa-solid fa-gamepad"></i> Nintendo</li></a>      
+        <a href="./pages/microsoft/microsoft.html"><li class="asideLi"><i class="fa-brands fa-xbox"></i> Microsoft</li></a>        
+        <a href="./pages/sony/sony.html"><li class="asideLi"><i class="fa-brands fa-playstation"></i> Sony</li></a>        
+        <a href="./pages/pc/pc.html"><li class="asideLi"><i class="fa-solid fa-laptop"></i> PC</li></a>
+      </ul>
+    </li>
+    <a href="./pages/noticias.html"><li  class="asideLi"><i class="fa-solid fa-newspaper"></i> Noticias</li></a>
+    <a href="./pages/contacto.html"><li  class="asideLi"><i class="fa-solid fa-user-astronaut"></i> Contacto</li></a>
+  </ul>
+  <hr>
+  <ol>
+    <li class="asideIndex"><a href="#historia">Historia</a></li>
+    <li>Generaciones
+    <ul>
+      <li class="asideIndex"><a href="#gen1">Generación 1</a></li>
+      <li class="asideIndex"><a href="#gen2">Generación 2</a></li>
+      <li class="asideIndex"><a href="#gen3">Generación 3</a></li>
+      <li class="asideIndex"><a href="#gen4">Generación 4</a></li>
+      <li class="asideIndex"><a href="#gen5">Generación 5</a></li>
+      <li class="asideIndex"><a href="#gen6">Generación 6</a></li>
+      <li class="asideIndex"><a href="#gen7">Generación 7</a></li>
+      <li class="asideIndex"><a href="#gen8">Generación 8</a></li>
+      <li class="asideIndex"><a href="#gen9">Generación 9</a></li>
+    </ul>
+    </li>
+  </ol>
+</aside>
+
+<!------------ SECTION ------------>
+
   <section>
-    <h1>Título</h1>
+    <h1>Consolas de videojuegos</h1>
+    <p>Una videoconsola o consola es un sistema electrónico de entretenimiento que ejecuta videojuegos contenidos en cartuchos, discos ópticos, discos magnéticos, tarjetas de memoria o cualquier dispositivo de almacenamiento. <br>
+      Los primeros sistemas de videoconsolas fueron diseñados únicamente para jugar videojuegos pero a partir de la quinta generación de videoconsolas han sido incorporadas características importantes de multimedia, internet, tiendas virtuales y servicio en línea como: Nintendo Switch Online, PlayStation Network, y Xbox Network. <br>
+      Una videoconsola es un pequeño sistema electrónico que está diseñado para ejecutar juegos desarrollados en una computadora o servidor. Al igual que las computadoras, pueden adoptar diferentes formas y tamaños; de este modo, pueden ser de sobremesa, es decir, requieren ser conectadas a un televisor para la visualización del videojuego, y a la red eléctrica para su alimentación, en la cual suelen consumir 12 voltios, o bien el dispositivo electrónico videoconsola portátil, que cuenta con una pantalla de visualización integrada y una fuente de alimentación propia (baterías o pilas). <br>
+      Los videojuegos pueden presentarse en forma de cartuchos de plástico que protegen una placa con chips en los que está almacenado el software, o también en disquete (como en Commodore 64), tarjeta de memorias, disco compactos (como en el caso de PlayStation, Sega Saturn), discos GD-ROM (en el caso de Sega Dreamcast), discos "GOD" (en el caso de Nintendo GameCube), DVD (como en PlayStation 2, Wii, Xbox, Xbox 360), Blu-ray (en el caso de la PlayStation 3, Xbox One, PlayStation 4), o Blu-ray Ultra HD (en el caso de PlayStation 5, Xbox Series X). El DVD-ROM y el BD-ROM son los que se han impuesto como estándar en las videoconsolas de séptima generación. El formato cartucho se utilizaba básicamente para videoconsolas portátiles o en generaciones pasadas de videojuegos, siendo las últimas más destacables la Nintendo 64 y Game Boy Advance. A la fecha septiembre de 2021, PlayStation Portable usa UMD, formato propietario de Sony, Nintendo DS, Nintendo 3DS y Nintendo Switch utilizan dispositivos portátiles de tarjetas SD.
+      </p>
+      <h2 id="historia">Historia</h2>
+      <p>En la industria de los videojuegos, las videoconsolas han sido clasificadas en distintas generaciones. Esta clasificación la determina su tiempo de lanzamiento y la tecnología existente en ese momento. Las empresas fabricantes lanzan una nueva consola en determinado tiempo (que puede variar entre 5 o 6 años). Por otro lado, algunas generaciones están señaladas por un número determinado de bits, los cuales determinan el ancho de bus del procesador, (de la segunda generación hasta la sexta generación).
+      <br>
+      Las primeras fabricantes ya presentaban equipos de 16 bits. A partir de esta cantidad, se fueron realizando las siguientes generaciones de consolas. Una consola de generación superior no tiene que poseer necesariamente un procesador de ancho de bus de datos de más bits, al contrario que la creencia popular que piensa que en cada generación se dobla el número de la anterior, ya que la potencia de un procesador está determinada además de por su ancho de bus por su estructura y velocidad.
+      <br>
+      En las videoconsolas de reciente generación ya no solo depende la potencia de la unidad CPU sino también del procesador gráfico GPU que es el procesador encargado del manejo de gráficos en la consola. Cada componente tiene una determinada cantidad de bits y velocidad.</p>
+      <h3 id="gen1">Primera generación</h3>
+      <p>Si bien los primeros juegos de computadora aparecieron en la década de los 1960, éstos utilizaban pantallas vectoriales, no de vídeo analógico. No fue hasta 1972 cuando se lanzó la primera videoconsola de sobremesa por la compañía electrónica Magnavox. La Magnavox Odyssey, fue creada por Ralph Baer, considerado como el padre de los videojuegos. La Odyssey tuvo un moderado éxito, sin embargo, con el lanzamiento del juego arcade Pong de Atari, comenzaron a popularizarse los videojuegos, el público comenzó a mostrar interés ante la nueva industria. En el otoño de 1975, la compañía Magnavox, cede ante la popularidad del Pong, se cancela el proyecto Odyssey, ya que el público solo jugaba al Pong y Hockey en la Odyssey 100.
+      <br>
+      Una posterior actualización de la consola Odyssey 100, la 200, llevaba incorporada una pantalla de puntuación, permitía hasta 4 jugadores, y se vendía junto con un tercer juego: Smash. Casi simultáneamente, la cadena de centros comerciales Sears compró los derechos del sistema Atari Pong y lo introdujeron en el mercado de consumo bajo el nombre de Sears-Telegames. Al igual que en el mercado arcade, el mercado pronto fue inundado por consolas clones de Pong y juegos derivados.</p>
+      <h3 id="gen2">Segunda generación</h3>
+      <p>En esta generación resaltaron Atari 2600, Colecovision, Mattel Intellivision y la Atari 5200. El dominio absoluto fue de Atari, aunque tuvo al menos dos rivales destacables. Colecovision con el doble de colores que la 2600 e Intellivision de Mattel que por primera vez en la historia incluye una CPU de 16 bits.</p>
+      <h3 id="gen3">Tercera generación</h3>
+      <p>Tras la crisis de los videojuegos, el mundo de las consolas prácticamente es un monopolio japonés. En esta generación las consolas como la NES (Nintendo Entertainment System) , Famicom (así se llamaba la NES en Japón) o Hyundai Comboy (llamada así en Corea del Sur) y la Sega Master System tenían 8 Bits. La NES domina prácticamente sola hasta la llegada de Mega Drive en 1988.</p>
+      <h3 id="gen4">Cuarta generación</h3>
+      <p>En 1987 NEC y Hudson, ponen la consola PC Engine en Japón o Turbografx en el resto del mundo, que tienen una CPU de 8 bits pero un chip gráfico de 16 bits. En 1988 Sega presenta su consola con una CPU de 16 bits conocida como Sega Genesis en América y Sega Mega Drive en Europa y Asia. En 1990 Nintendo saca su consola de 16bits Super Nintendo y este mismo año, la productora de arcades SNK saca Neo-Geo, la consola más potente de esta generación llamada el Rolls Royce de las consolas por su elevado precio. Esta generación destaca, por los chips gráficos añadidos al cartucho, como el Super FX y SVP y las ampliaciones de hardware de Mega Drive: Mega CD y Sega 32X. Aparecen conceptos como multitarea, multimedia, gráficos vectoriales, etc... Super Nintendo es la consola más vendida con 49 millones de unidades, aunque la más vendida en Europa es Mega Drive.</p>
+      <h3 id="gen5">Quinta generación</h3>
+      <p>En el período de la quinta generación existen muchos fabricantes de juegos que presentaron diversos equipos con características parecidas a las de un computadora. Estos fabricantes comenzaron a presentar títulos en un entorno 3D, aprovechando la mayor capacidad de hardware de los equipos. A esta generación se la conoce como la "era de los 32 bits", aunque ocasionalmente algunas personas se refieren a ella como la era de los 64 bits puesto que Nintendo lanzaría dos años más tarde un sistema que rompería este apodo. Se trata de la consola Nintendo 64, a la que raramente se llama también la "era 3D".
+      <br>
+      Se trata de una generación que supuso el paso de los 2D a los entornos tridimensionales 3D, que comenzó en el año 1994 cuando Sega lanzó su Sega Saturn y Sony su PlayStation, la cual supuso la irrupción de esta compañía en el mundo de los videojuegos.
+      <br>
+      Básicamente el mercado estaba dominado por tres consolas, Nintendo 64 (1996), la cual contó con algunos de los videojuegos más emblemáticos de la época y de la historia del ocio electrónico, como el inolvidable Super Mario 64 (juego de lanzamiento que, en consecuencia, cumple también 25 años), F-Zero X, Perfect Dark o The Legend of Zelda: Ocarina of Time, entre otros. Del mismo modo, vio nacer sagas como Super Smash Bros. que siguen siendo grandes éxitos de ventas en la actualidad, Sega Saturn (1994) que fue la consola más discutida de SEGA, que sin embargo gozó de un gran éxito en Japón y es para muchos una gran desconocida, aunque atesora una larga lista de grandes juegos. Por su parte Sony, con la consola PlayStation (1994) donde los juegos eran los primeros que se lanzaban en CD. En el transcurso de una década, PlayStation se convirtió en la primera consola de juegos de la historia en vender más de 100 millones de unidades en todo el mundo y, a lo largo de su vida, llegó a contar con casi 8 000 juegos. La demografía en las ventas de consolas varió considerablemente, pero estas consolas definieron la guerra de consolas de esta era. La 3DO Interactive Multiplayer y la Atari Jaguar fueron también parte de esta era, pero su marketing fue pobre y fallaron a la hora de crear impacto. Esta era también vio una versión actualizada de la Game Boy de Nintendo: la Game Boy Color.</p>
+      <h3  id="gen6">Sexta generación</h3>
+      <p>En esta generación, se produjeron equipos con similitudes a la arquitectura de una computadora personal, no obstante, las consolas de sobremesa prescindieron de los cartuchos y utilizan medios de almacenamiento de gran capacidad como el DVD, GD-ROM, GOD. Lo cual hizo que los juegos fuesen más largos y visualmente más atractivos. Además, esta generación también experimenta el videojuego en línea en las consolas y la aplicación de sistemas almacenamiento internos en los equipos como memoria flash y disco duros que son utilizados para guardar datos del videojuego.
+      <br>
+      La Dreamcast fue la primera consola de esta generación, y la última consola de videojuegos de Sega, también fue la primera en cesar su producción en esta generación. Sega implementó un tipo especial de soporte óptico llamado GD-ROM. Estos discos fueron creados con el fin de evitar la piratería de software, relativamente fácil en las consolas de la generación anterior, ya que coincidió con la salida al mercado de las primeras grabadoras de CD-ROM, sin embargo, este formato fue instantáneamente violado. En 2001, se suspende la producción de este sistema, Sega se enfoca únicamente al desarrollo de software. Sin embargo, la compañía continuó dando soporte a las consolas que fueron vendidas y al formato GD-ROM, hasta el 2007. El equipo fue el primero en disponer de un módem de 33.6 Kb, con el cual se podía acceder a Internet y jugar algunos títulos en línea como Phantasy Star Online.
+      <br>
+      La PlayStation 2 de Sony continuó el mismo éxito de la PlayStation, y fue la primera videoconsola casera en incluir un reproductor de DVD, que permitía reproducir películas en el sistema. Además existía la posibilidad de poner un disco duro interno, en combinación con el adaptador de red. Al igual que su predecesor, también dispuso de un modelo pequeño que fue lanzado en el 2004. La consola fue retirada en 2013.
+      <br>
+      La Nintendo GameCube fue la cuarta videoconsola de sobremesa de Nintendo, y el primer sistema de la compañía que prescinde de los cartuchos. Este sistema utiliza un formato de disco similar al DVD, denominado "GOD" (Gamecube Optical Disc), cuyo tamaño es de 8 cm. Fue retirada en 2008.
+      <br>
+      La Xbox fue la última consola que salió en esta generación y la primera de Microsoft. Se apoyó como lo hizo Sega Dreamcast en el juego en línea e innovó al proporcionar a la consola un disco duro integrado; utiliza el formato DVD y da la posibilidad de guardar música desde un CD de audio a la consola utilizándolo juegos como GTA San Andreas. Tuvo una buena aceptación, aunque una corta vida.
+      <br>
+      La V Smile también fue la penúltima consola que salía de primera de Vtech que era para menores de 0 a 7 años y se usaban cartuchos compatibles en vez y su memoria era de 644 mb. y su tamaño es de 2.2 cm.</p>
+      <h3  id="gen7">Séptima generación</h3>
+      <p>Esta generación se caracteriza por la introducción de la tecnología multinúcleo en la unidad central de procesamiento. También está marcada por la integración del formato de disco óptico Blu-ray y los controladores inalámbricos y la detección de movimiento que han "desplazado" el clásico controlador por cable.
+      <br>
+      Otro aspecto importante es la distribución de juegos vía Internet, gracias a la aparición del servicio de banda ancha a nivel mundial. Algunos de los servicios de Internet que dan soporte técnico a los juegos multijugador es la Xbox Live de Microsoft, la PlayStation Network de Sony y la Nintendo WiFi Connection de Nintendo. Otro aspecto importante que caracteriza esta generación a las otras, es la inclusión de chips gráficos sofisticados que ayudan a procesar imágenes reales tal es el caso del procesador digital GPU.
+      <br>
+      En esta generación Sega dejó de competir con las principales videoconsolas para dirigirse a un mercado de menor escala con el lanzamiento de su miniconsola Sega Zone que al igual que las demás consolas de la generación, está equipada con sensores de movimiento. En este mismo mercado aparece la miniconsola Zeebo que ofrecía juegos en línea y que más tarde anunciaría el cese de su producción.
+      <br>
+      Vtech llegó a la séptima generación con su V Smile Moniton, una consola que paso en 2008 que Zeebo en precederlo al 1.
+      <br>
+      Únicamente tres compañías se disputan el mercado a gran escala: Nintendo, Sony y Microsoft. Nintendo y Sony son empresas de origen de Japón, mientras que Microsoft es la única empresa de origen de los Estados Unidos que disputa el mercado de videoconsolas a gran escala. A finales del año 2005, la Xbox 360 de Microsoft fue la primera en aparecer en esta generación. En noviembre de 2006, aparecen la Wii de Nintendo y la PlayStation 3 de Sony. Respecto a las ventas, la compañía Nintendo recupera el mercado, gracias al nuevo enfoque con el cual se diseñó la Wii, para así posicionarse en el primer lugar en las ventas de videoconsolas de sobremesa.</p>
+      <h3 id="gen8">Octava generación</h3>
+      <p>Lo destacable de esta generación es el uso de internet como eje central de la funcionalidad de las consolas, estas convertidas en media centers juntando en un único aparato, las funciones de consola de juegos y bazar de venta de películas, series de TV y otros contenidos desde el propio aparato. Aunque las generaciones anteriores de videoconsolas normalmente se han sucedido en ciclos de cinco años, la transición de la séptima a la octava generación ha durado más de seis años. La transición es igual de usual en que la consola de sobremesa de la anterior generación que tuvo más ventas, la Wii, es la primera en tener sucesora.</p>
+      <h3  id="gen9">Novena generación</h3>
+      <p>Durante esta nueva generación Nintendo, Sony y Microsoft lanzaron sus nuevas videoconsolas.
+      <br>
+      El comienzo de la novena generación se produjo en 2017 con la salida de Nintendo Switch siendo la sucesora de la Wii U, Lo destacable de esta generación es el lanzamiento de consolas cuyo formato de videojuegos es completamente digital, cómo por ejemplo, el Xbox Series S de Microsoft y la versión digital de la PlayStation 5 de Sony, aunque en la anterior generación ya se buscó terreno con la Xbox One S all digital. Por otro lado Google decidió lanzar su Stadia el cual sería un mando que se puede usar para jugar juegos en celulares se puede conectar por bluetooth o usar un cable para conectarlo.
   </section>
-  <aside>
-  </aside>
   </main>
 
 <!------------ FOOTER ------------>
@@ -66,6 +157,6 @@
     
 <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-
+<script src="./js/script.js"></script>
 </body>
 </html>

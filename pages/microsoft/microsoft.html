@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/iconhead.png">
+    <link href="/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>MICROSOFT</title>
+</head>
+<body>
+    
+    <header class="p-3 bg-dark text-white">
+        <div class="banner">
+            <img class="imgbanner" src="../../img/banner.png" alt="banner">
+        </div>    
+            <div id="navegador" class="container">
+              <div id="navegadoritems" class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="../../index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <img src="../../img/icon.png" alt="Icono" id="icono">
+<!--                   <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg> -->                
+                </a>
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                  <li><a href="../../index.html" class="nav-link px-2 text-secondary">INICIO</a></li>
+                  <li><a href="../../pages/consolas.html" class="nav-link px-2 text-white">CONSOLAS</a></li>
+                  <li><a href="../../pages/noticias.html" class="nav-link px-2 text-white">NOTICIAS</a></li>
+                  <li><a href="../../pages/contacto.html" class="nav-link px-2 text-white">CONTACTO</a></li>
+                </ul>
+        
+                <form id="navegadorsearch" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                  <input type="search" class="form-control form-control-dark text-white bg-dark" placeholder="Buscar..." aria-label="Search">
+                </form>
+        
+                <div id="navegadorbtn" class="text-end">
+                  <button type="button" class="btnSesion" onclick="sesion()">INICIA SESIÓN</button>
+                  <button type="button" class="btnRegistro" onclick="registro()">REGISTRATE</button>
+                </div>
+              </div>
+            </div>
+          </header>
+<!------------ MAIN ------------>
+<main>
+  
+<!------------ ASIDE ------------>
+
+<aside>
+  <ul class="asideUl">
+    <a href="../../index.html"><li class="asideLi"><i class="fa-solid fa-house-chimney"></i> Inicio</li></a>
+    <li class="asideLi"  onclick="abrirMenu()"><i class="fa-solid fa-circle-play"></i> Consolas
+      <ul class="submenu" id="menuConsolas">
+        <a href="../../pages/nintendo/nintendo.html"><li class="asideLi"><i class="fa-solid fa-gamepad"></i> Nintendo</li></a>      
+        <a href="../../pages/microsoft/microsoft.html"><li class="asideLi"><i class="fa-brands fa-xbox"></i> Microsoft</li></a>        
+        <a href="../../pages/sony/sony.html"><li class="asideLi"><i class="fa-brands fa-playstation"></i> Sony</li></a>        
+        <a href="../../pages/pc/pc.html"><li class="asideLi"><i class="fa-solid fa-laptop"></i> PC</li></a>
+      </ul>
+    </li>
+    <a href="../../pages/noticias.html"><li  class="asideLi"><i class="fa-solid fa-newspaper"></i> Noticias</li></a>
+    <a href="../../pages/contacto.html"><li  class="asideLi"><i class="fa-solid fa-user-astronaut"></i> Contacto</li></a>
+  </ul>
+  <hr>
+  <ol>
+    <li class="asideIndex"><a href="#estreno">Sálida al Mercado</a></li>
+    <li class="asideIndex"><a href="#consolasMicrosoft">Consolas</a>
+    <ul>
+      <li class="asideIndex"><a href="#xboxClassic">XBOX</a></li>
+      <li class="asideIndex"><a href="#xbox360">XBOX 360</a></li>
+      <li class="asideIndex"><a href="#xboxOne">XBOX ONE</a></li>
+      <li class="asideIndex"><a href="#xboxXS">XBOX X|S</a></li>
+    </ul>
+    <li class="asideIndex"><a href="#btn_tabla">Mascotas</a></li>
+  </li>
+  </ol>
+</aside>
+
+<!------------ SECTION ------------>
+
+  <section>
+    <h1>Historia</h1>
+    <p>La idea de que Microsoft debería desarrollar su propia consola de juegos comenzó a ganar fuerza en 1998, con Kevin Bachus, Seamus Blackley, Otto Berkes y Ted Hase formando el primer equipo para las consolas del gigante del software, después de lanzar su idea a Bill Gates. Originalmente llamada DirectX Box, la consola estaba destinada a ser el primer sistema de juegos construido como una PC, lo que aportaba toda la flexibilidad y el poder de una plataforma de juegos al mercado de las consolas. <br>
+    El sistema correría sobre Windows 2000, lo que facilitaría a los desarrolladores de software para PC trabajar dentro de la arquitectura de la consola, además de tener el doble de la capacidad de procesamiento de la PlayStation 2, en ese entonces líder en la industria. Sin embargo a pesar de los esfuerzos del equipo de mercadeo, el nombre no fue bien recibido por los grupos de prueba, por lo que la empresa se vio forzada a enfocarse en uno de los elementos finales que necesitaba para abrir el telón de su creación: un nombre que llame la atención y se convierta en una marca. <br>
+    Solo dos años después, Microsoft ya estaba listo para hacer pública su consola, y eso es exactamente lo que hizo Bill Gates en la Conferencia de Desarrolladores de Juegos en el 2000. Hablando de las especificaciones enormemente mejoradas del sistema, y el potencial tanto para el juego en línea como para el almacenamiento interno de contenido descargado, (juegos y media), Gates logró atraer la atención del mundo. Muchos siguieron siendo escépticos, pues y no veían más que una PC elegante disfrazada de consola de juegos. <br>
+    Microsoft continuó presionando para romper esquemas tanto en la consola como en su presupuesto de marketing, con más demostraciones en la Electronic Entertainment Expo unos meses más tarde. Fue allí donde su futuro se vio aún más promisorio: el desarrollador de Xbox se conectó por primera vez con Bungie Studios, los creadores de un juego de acción y disparos en tercera persona, Halo: Combat Evolved. La compra de Bungie por 30 millones de dólares por parte de Microsoft poco tiempo después llegó a hacer titulares en la industria del juego, pero fue la decisión de Bungie adaptar Halo para aprovechar al máximo las capacidades de la nueva consola y convertirla en un juego de disparos en primera persona. Esta fue la jugada que ayudó a hacer historia. <br>
+    Casi un año después, Bill Gates, con la ayuda de Dwayne «The Rock» Johnson, reveló el diseño final de la Xbox en el Consumer Electronics Show 2001 en Las Vegas, junto con la fecha de lanzamiento oficial del sistema.</p>
+    <h2 id="estreno">Sálida a la venta</h4>
+    <p>El 14 de noviembre del 2001, la sucursal de Toys ‘R’ Us en Times Square fue la sede del lanzamiento oficial de Xbox, y Bill Gates se presentó para iniciar el gran experimento de su compañía. Las preocupaciones con respecto a la apariencia y el diseño del sistema, así como el precio de $299 dólares, se quedaron por el camino, con más de un millón de consolas Xbox volando de las estanterías en las primeras tres semanas a la venta. <br>
+    Un componente clave para el éxito de la consola fue la popularidad de su juego estrella, Halo, que ofreció un doble golpe por ser exclusivo para Xbox, y uno de los títulos más convincentes e innovadores del género de disparos en primera persona que llegó al público en años. Las ventas de Halo rompieron todos los récords anteriores, con más de un millón de copias del juego vendidas en los primeros meses de su lanzamiento. Puede que no parezca mucho para los estándares de hoy, pero alcanzar la marca de un millón de unidades en ese entonces era algo inaudito. <br>
+    El 18 de abril de 2002, Microsoft recortó el precio de la Xbox de $299 a $199 dólares. Si bien la reducción dramática en el precio hizo casi imposible que la compañía obtuviera algún beneficio de las ventas del sistema, la medida logró alentar a más hogares a llevar una Xbox a casa. También permitió a la Xbox vender más que el recién lanzado Nintendo GameCube en los años que siguieron, estableciendo aún más a la Xbox como una fuerza a tener en cuenta en la guerra de entretenimiento en el hogar en el mundo de los videojuegos y consolas.</p>
+    <h2 id="consolasMicrosoft">Consolas</h2>
+    <h4 id="xboxClassic">XBOX</h4>
+    <p>Microsoft lanzó en 2001 su Xbox, fue su primera consola de sobremesa (en colaboración con Intel) y compitió contra la PlayStation 2, la segunda consola de Sony, la Gamecube de Nintendo y el Dreamcast de Sega. Su principal característica es su procesador central basado en el procesador Intel Pentium III. El sistema también incorpora un lector de DVD, un disco duro interno, puerto ethernet y por último el sistema dispone de cuatro conectores para los mandos. <br>
+    La arquitectura de la Xbox está basada en la arquitectura x86 similar a la de un PC, lo que facilitó a los desarrolladores adaptar un gran número de títulos de PC para la Xbox, ayudando a ampliar el catálogo de juegos de la consola.</p>
+    <h4 id="xbox360">XBOX 360</h4>
+    <p>Xbox 360 es la segunda videoconsola de sobremesa producida por Microsoft. Fue desarrollada en colaboración con IBM y ATI y lanzada en América del Sur, América del Norte, Japón, Europa y Australia entre 2005 y 2006. Su servicio Xbox Live permite a los jugadores competir en línea y descargar contenidos como juegos arcade, demos, tráileres, programa de televisión y películas. La Xbox 360 es la sucesora directa de la Xbox, y compitió con la PlayStation 3 de Sony y Wii de Nintendo como parte de las videoconsolas de séptima generación.
+    <br>
+    Como principales características, están su unidad central de procesamiento basado en un IBM PowerPC y su unidad de procesamiento gráfico que soporta la tecnología de Shaders Unificados. El sistema incorpora un puerto especial para agregar un disco duro externo y es compatible con la mayoría de los aparatos con conector USB gracias a sus puertos USB 2.0. Los accesorios de este sistema pueden ser utilizados en una computadora personal como son los mandos y el volante Xbox 360.</p>
+    <h4 id="xboxOne">XBOX ONE</h4>
+    <p>La Xbox One es una consola de octava generación y la tercera videoconsola de sobremesa producida por Microsoft. Fue presentada el 21 de mayo de 2013 en la Xbox Reveal y sus características fueron dada a conocer el 10 de junio de 2013 en el E3. Es la sucesora de la Xbox 360 y actualmente compite con la PlayStation 4 de Sony y la Nintendo Switch de Nintendo. Su salida a la venta fue el 22 de noviembre de 2013 a un precio de 499 dólares en Estados Unidos. <br>
+    La nueva consola cuenta con 8 núcleos de 64 bits, 8 GB de memoria RAM, 500 GB de disco duro y un lector Blu-Ray. Incluye además conexiones USB 3.0, HDMI in-out y WI-FI 802.11n Wireless. También el Kinect 2.0 cuenta con una cámara de 1080p que procesa 2 GB de datos por segundo con un tiempo de respuesta de 13 milésimas de segundo[cita requerida]. El sistema operativo está formado por el Kernel de Windows, además que comparte una interfaz similar, tendrá varias funciones multimedia y de Internet Explorer. Cuenta con una unidad óptica Blu-Ray Disc para películas e incluye el sistema cloud de almacenamiento en línea.</p>
+    <h4 id="xboxXS">XBOX X|S</h4>
+    <p>El 12 de diciembre de 2019, durante el evento The Game Awards 2019, Microsoft anunció oficialmente el nombre y el diseño del sucesor de Xbox One, Xbox Series X. Se dio a conocer por primera vez durante la conferencia de prensa de Microsoft en el E3 2019 bajo el nombre en clave "Proyecto Scarlett". La consola fue lanzada el 13 de noviembre de 2020, con un precio en Estados Unidos para la Series X de 499 dólares y 299 dólares para la Series S. Su competidora es la PlayStation 5 de Sony. <br>
+    Microsoft declaró que Xbox Series X sería cuatro veces más potente que Xbox One X; algunas de sus características incluyen la arquitectura de CPU Zen 2 de AMD y la arquitectura de gráficos RDNA, una unidad de estado sólido de diseño personalizado, GDDR6 SDRAM y soporte para trazado de rayos en tiempo real, procesamiento de hasta 120 cuadros por segundo y resolución 8K. Microsoft también ha promovido el "modo automático de baja latencia" y la "entrada de latencia dinámica" para mejorar la capacidad de respuesta. El diseño de la Xbox Series X tiene una forma similar a una "torre", diseñado para posicionarse vertical u horizontalmente. La consola incluirá una versión actualizada del mando de Xbox One, agregando una cruceta circular cóncava similar al mando Elite y un botón "Compartir". Xbox Series X seguirá siendo compatible con los mandos y accesorios existentes de Xbox One. Mientras tanto, la Series S cuenta con muchos parecidos a Series X, pero tiene algunas diferencias, como menos Tera-FLOPS, es más pequeña, y no tiene lector de discos.</p>
+
+    <button id="btn_tabla" class="btn_tabla" onclick="mostrarTabla()">Mostrar información</button>
+    <br>
+
+    <table id="tabla" class="tabla">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Breve descripción</th>
+          <th>Imagen</th>
+        </tr>
+      </thead>
+      <tr>
+        <td><b>Halo</b></td>
+        <td>Halo es una franquicia de videojuegos de ciencia ficción creada y desarrollada por <b>Bungie Studios</b> hasta Halo: Reach, y gestionada ahora por <b>343 Industries</b>, propiedad de Xbox Game Studios. La serie se centra en una guerra interestelar entre la humanidad y una alianza teocrática de alienígenas conocidos como Covenant. Más adelante se encontrarán más amenazas como los Floods y los Prometeos. El Covenant es guiado por sus líderes religiosos, los profetas, y adoran a una antigua civilización conocida como los Forerunners, quienes perecieron en combate con el parásito Flood. Muchos de los juegos se centran en las experiencias del jefe maestro John-117 (masterchief), un súper soldado biológicamente mejorado, y su compañera inteligencia artificial (IA), Cortana. El término «Halo» se refiere a las megaestructuras Halo: grandes estructuras habitables en forma de anillos, instaladas en el espacio exterior.</td>
+        <td><img class="imgTable" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9fdbsDV-tt1KxQAWYlyV-yikAf-Z-RluhWgGfH3G2Sifho5xQZczpkAy20v8X6lLj2C4&usqp=CAU" alt="Halo"></th>
+      </tr>
+      <tr>
+        <td><b>Crash <br> Bandicoot</b></td>
+        <td>Crash Bandicoot es el nombre de una serie de videojuegos protagonizado por el personaje del mismo nombre. Fue creada en 1996 por <b>Naughty Dog</b>, quien desarrolló los primeros cuatro títulos, bajo la distribución de <b>Universal Interactive Studios</b>. Los tres primeros juegos pertenecen al género de plataformas, sin embargo, con el tiempo se fue diversificando a otros géneros. La serie ha vendido más de 50 millones de copias en todo el mundo. <br>
+        La serie trata de Crash Bandicoot, un marsupial evolucionado por el científico loco Neo Córtex, quien tenía intenciones viles de controlarlo mentalmente para dirigir su ejército de animales mutantes. La historia se desarrolla en unas islas ficticias al sur de Australia, por lo que su fauna y entorno se apegan a esta región. Inicialmente, la misión de Crash Bandicoot era rescatar a su novia Tawna de Neo Córtex, pero luego se transformó en impedir los planes del científico una y otra vez.</td>
+        <td><img class="imgTable" src="https://pbs.twimg.com/media/End5f02XYAA2F6N.png" alt="Crash Bandicoot"></th>
+      </tr>
+      <tr>
+        <td><b>Spyro</b></td>
+        <td>Spyro es una serie de videojuegos pertenecientes al género de plataformas que presenta principalmente al protagonista Spyro el Dragón. Desde la introducción de la serie en 1998, hubo un reinicio de la serie en forma de trilogía llamada La leyenda de Spyro, lo que hace un total de diez juegos de Spyro el Dragón y tres juegos de La leyenda de Spyro. </td>
+        <td><img class="imgTable" src="https://pbs.twimg.com/media/FMWXaaXWUAAynAN?format=jpg&name=large" alt="Spyro"></th>
+      </tr>
+      <tr>
+        <td><b>Blinx</b></td>
+        <td>Blinx es un videojuego de plataformas desarrollado por Artoon y publicado por Microsoft Game Studios. <br>
+        Anunciado como el primer juego de acción en 4D del mundo, Blinx es un juego de plataforma en tercera persona, en el cual el jugador controla a Blinx, un barrendero del tiempo, en su misión para impedir el fin del mundo. El juego gira en torno al control del tiempo de Blinx. Blinx está equipado con una aspiradora mágica, la aspiradora del tiempo (o TS-1000), con la que puede ejercer cierto control sobre el tiempo en sí: frenar, acelerar, revertir o detener totalmente su entorno.</td>
+        <td><img class="imgTable" src="https://www.retroplace.com/pics/xbox/titles/68636--blinx-the-time-sweeper.png" alt="Blinx"></th>
+      </tr>
+      <tr>
+        <td><b>Vault <br> Boy</b></td>
+        <td>Fallout es una serie o saga de videojuegos de rol publicados originalmente por <b>Interplay</b>, luego posteriormente, por <b>Bethesda Softworks</b> y ahora por <b>Xbox Game Studios</b>. Aunque las tramas de los videojuegos se desarrollan en los siglos 22 y 23, prevalece una gran influencia de la cultura de posguerra desarrollada en los años 1950 en Estados Unidos, así como la combinación de esperanza y progreso tecnológico, junto con el miedo a la aniquilación nuclear y los efectos de una Tercera guerra mundial a finales del siglo 21.<br>
+        Una de las figuras más representativas de los juegos de <b>Fallout</b> es <b>Vault Boy</b>, el chico de pelo rubio que aparece en varias portadas de la franquicia. A simple vista podemos destacar que es un chico con el pelo corto, que lleva puesto un traje azul además de que siempre aparece con un ojo cerrado y el dedo pulgar levantado.</td>
+        <td><img class="imgTable" src="https://fictionalcorporations.com/wp-content/uploads/kisspng-fallout-new-vegas-fallout-3-fallout-4-vault-tec-vault-boy-5b22586ba6dba3.9758647115289775156835.png" alt="Vault Boy"></th>
+      </tr>
+    </table>
+  </section>
+  </main>
+
+<!------------ FOOTER ------------>
+        <footer>
+            <div class="footer"></div>
+            <p>Alumno: Daniel Palau
+            <br>
+            Mail: palaudanny@gmail.com 
+            <br>
+            Comision E
+            <br>
+            Revolución Digital
+            </p>
+            </div>
+        </footer>
+    
+<!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="../../js/script.js"></script>
+</body>
+</html>

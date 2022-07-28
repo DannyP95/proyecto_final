@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/iconhead.png">
+    <link href="/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>CONSOLAS</title>
+</head>
+<body>
+    
+    <header class="p-3 bg-dark text-white">
+        <div class="banner">
+            <img class="imgbanner" src="../img/banner.png" alt="banner">
+        </div>    
+            <div id="navegador" class="container">
+              <div id="navegadoritems" class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="../index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <img src="../img/icon.png" alt="Icono" id="icono">
+<!--                   <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg> -->                
+                </a>
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="../index.html" class="nav-link px-2 text-secondary">INICIO</a></li>
+                    <li><a href="../pages/consolas.html" class="nav-link px-2 text-white">CONSOLAS</a></li>
+                    <li><a href="../pages/noticias.html" class="nav-link px-2 text-white">NOTICIAS</a></li>
+                    <li><a href="../pages/contacto.html" class="nav-link px-2 text-white">CONTACTO</a></li>
+                  </ul>
+        
+                <form id="navegadorsearch" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                  <input type="search" class="form-control form-control-dark text-white bg-dark" placeholder="Buscar..." aria-label="Search">
+                </form>
+        
+                <div id="navegadorbtn" class="text-end">
+                  <button type="button" class="btnSesion" onclick="sesion()">INICIA SESIÓN</button>
+                  <button type="button" class="btnRegistro" onclick="registro()">REGISTRATE</button>
+                </div>
+              </div>
+            </div>
+          </header>
+<!------------ MAIN ------------>
+<main>
+  
+<!------------ ASIDE ------------>
+
+<aside>
+  <ul class="asideUl">
+    <a href="../index.html"><li class="asideLi"><i class="fa-solid fa-house-chimney"></i> Inicio</li></a>
+    <li class="asideLi"  onclick="abrirMenu()"><i class="fa-solid fa-circle-play"></i> Consolas
+      <ul class="submenu" id="menuConsolas">
+        <a href="../pages/nintendo/nintendo.html"><li class="asideLi"><i class="fa-solid fa-gamepad"></i> Nintendo</li></a>      
+        <a href="../pages/microsoft/microsoft.html"><li class="asideLi"><i class="fa-brands fa-xbox"></i> Microsoft</li></a>        
+        <a href="../pages/sony/sony.html"><li class="asideLi"><i class="fa-brands fa-playstation"></i> Sony</li></a>        
+        <a href="../pages/pc/pc.html"><li class="asideLi"><i class="fa-solid fa-laptop"></i> PC</li></a>
+      </ul>
+    </li>
+    <a href="../pages/noticias.html"><li  class="asideLi"><i class="fa-solid fa-newspaper"></i> Noticias</li></a>
+    <a href="../pages/contacto.html"><li  class="asideLi"><i class="fa-solid fa-user-astronaut"></i> Contacto</li></a>
+  </ul>
+<hr>
+  <ol>
+      <li class="asideIndex"><a href="#year1">1988</a></li>
+      <li class="asideIndex"><a href="#year2">1990</a></li>
+      <li class="asideIndex"><a href="#year3">1993</a></li>
+      <li class="asideIndex"><a href="#year4">1994</a></li>
+      <li class="asideIndex"><a href="#year5">1996</a></li>
+      <li class="asideIndex"><a href="#year6">1998</a></li>
+      <li class="asideIndex"><a href="#year7">2000</a></li>
+      <li class="asideIndex"><a href="#year8">2001</a></li>
+      <li class="asideIndex"><a href="#year9">Posteriores</a></li>
+  </ol>
+</aside>
+
+<!------------ SECTION ------------>
+
+  <section>
+    <h1>Consolas de videojuegos</h1>
+    <h4>La evolución de las consolas de videojuegos</h4>
+    <p>Las consolas de videojuegos han evolucionado gracias a la tecnología y a las distintas necesidades de los usuarios.
+    <br>
+    A lo largo del tiempo las consolas de vid eojuegos han evolucionado gracias a los avances tecnológicos.
+    <br>
+    A pesar de que ahorita es común encontrarlas eso no pasaba en sus inicios.
+    <br>
+    La primer consola recibió el nombre de Odyssey fue creada por el Ing. Ralph Baer entre 1967 y 1968, en 1972 Magnavox compró la licencia y se empezó a vender con el nombre de Magnavox Odyssey, la consola contaba con 2 joysticks para tener partidas entre dos jugadores y cartuchos intercambiables.
+    <br>
+    Esta consola era muy diferente a lo que estamos acostumbrados ya que no era 100% virtual ya que a su funcionamiento se le agregaban dados, naipes, y fichas para complementar los juegos.
+    <br>
+    En 1975 nació el Atari Pong que tan sólo incluía un juego, la calidad de gráficos era mucho mejor y fueron los primeros en introducir sonido. Era un juego de dos dimensiones que representaba un juego de tenis.
+    <br>
+    En 1976 nació una consola que marcó generaciones, Atari 2600 se convirtió en el primer videojuego en tener éxito ya que tenía cartuchos intercambiables.
+    <br>
+    En los 80’s llegaron las consolas importadas desde Japón, Nintendo y Sega las más conocidas. A esta generación de consolas se les conoció con el nombre “8 bits” ya que era la tecnología que utilizaban en su procesador.
+    <br>
+    Las consolas más destacadas fueron NES que se lanzó primero y Sega Master System dos años después pero al no tener tanta variedad no fue tan famosa.
+    <br>
+    Los personajes que marcaron tendencia fueron Mario Bros, Zelda y Sonic, que han sido parte desde ese momento hasta la fecha de los videojuegos.
+    <br>
+    Más tarde la tecnología evolucionó y llegaron los 16 bits con 256 píxeles y 8 controles de mando.
+    <br>
+    Con estos avances se crearon varias consolas:</p>
+    <h4 id="year1">1988, Sega Mega Drive</h4>
+    <p>Consola de alto precio, con pocos títulos y formato de disco compacto (Sega Mega CD)</p>
+    <h4 id="year2">1990, Super Nintendo</h4>
+    <p>Procesador y chips que procesaban videos y sonidos, desafortunadamente los juegos no pudieron aprovechar este avance y ser de gran calidad. Lo curioso es que sólo en Japón esta consola permitía realizar competencias en línea.p</p>
+    <h4 id="year3">1993</h4>
+    <p>Atari Jaguar fue el último intento de esta empresa de ser líderes en el mercado y fue la primera consola de 64bits, desafortunadamente no tuvo éxito.</p>
+    <h4 id="year4">1994</h4>
+    <p>PlayStation llegó para imponerse y marcar tendencia. <br>
+    <p>Esta marca japonesa lanzaba su consola al mercado de 32bits con formato de CD y posibilidad de usar tarjetas de memoria. Las ventas superaron las 100 millones de consolas</p>
+    <h4 id="year5">1996</h4>
+    <p>Nintendo 64 aunque continuaba utilizando el formato de cartuchos y la calidad contra los CD’s era limitada, fue de las competencias más fuertes de Playstation.
+    <br>
+    <p>Ya que contaba con una gran velocidad de transferencia de datos a la consola y agregaba la vibración en el control en momentos de impact.
+    <br>
+    Las siguientes consolas tenían en común el CD, además de que los controles ya eran ergonómicos y la conectividad a internet era fundamental.
+    <h4 id="year6">1998</h4>
+    <p>Sega Dreamcast a pesar de ya contar con juegos en línea, fue la última consola de Sega después de varios intentos de competir en el mundo gamer.</p>
+    <h4 id="year7">2000</h4>
+    <p>PlayStation 2 contó con gran cantidad de títulos y gracias a la consola anterior los fanáticos la recibieron com brazos abiertos, siendo hasta la fecha la consola más vendida. Otro plus fue que esta consola se podía utilizar como DVD.</p>
+    <h4 id="year8">2001</h4>
+    <p>Xbox llegó de la mano de Microsoft para colocar de nueva cuenta a Estados Unidos en la competencia. La similitud en el sistema operativo logró que los títulos se pudieran adaptar a esta consola. Además se creó Xbox live para que los competidores se conectaran y compitieran con jugadores de otras partes del mundo al conectarse a internet.
+    <h4 id="year9">Posteriores a 2001</h4>
+    <p>A partir de este momento llegaron las mejores consolas y más competitivas que tenían un CPU, Blue Ray, disco duro interno para almacenar juegos y lo mejor los controles inalámbricos para evitar el uso de cables. Las consolas más famosas fueron el PlayStation3 que el lugar de DVD utilizaba BlueRay y lanzó PlayStation Network para competir con Xbox Live; El Wii permitía detectar movimiento por medio de los controles lo que lo hacía más dinámico y algo totalmente diferente a todo lo que vimos anteriormente ya que también tenía accesorios para poner el control y el Xbox 360 que agregó el sistema Kinect para también detectar movimiento y hacer los juegos más dinámicos, se podía utilizar el control o manejar por medio de movimientos corporales.
+    <br>
+    Cada vez el internet se hace más importante en el uso de las consolas ya que ahora es primordial para utilizarlas. Se han ido creando mejoras y haciendo propuestas en las consolas que han ido evolucionando conforme la tecnología lo va avanzando pero el mayor cambio ha sido Nintendo Switch que es un híbrido entre una consola de mesa y una portátil, permitiendo las dos opciones para los usuarios dependiendo las necesidades. Además tiene pantalla táctil lo que da más opción para jugar por lo que puede ser una tableta con controles propios o si prefieres la puedes conectar a la televisión. Gracias a esta consola Nintendo logró seguir compitiendo ante los grandes avances de marcas como Xbox y PlayStation.
+    <br>
+    La marca japonesa lanzó PS5 y la estadounidense Xbox Series que son máquinas mucho más potentes con un hardware mucho más avanzado y que siguen peleando por ser la favorita de los gamers.</p> 
+  </section>
+  </main>
+
+<!------------ FOOTER ------------>
+        <footer>
+            <div class="footer"></div>
+            <p>Alumno: Daniel Palau
+            <br>
+            Mail: palaudanny@gmail.com 
+            <br>
+            Comision E
+            <br>
+            Revolución Digital
+            </p>
+            </div>
+        </footer>
+    
+<!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/iconhead.png">
+    <link href="/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>SONY</title>
+</head>
+<body>
+    
+    <header class="p-3 bg-dark text-white">
+        <div class="banner">
+            <img class="imgbanner" src="../../img/banner.png" alt="banner">
+        </div>    
+            <div id="navegador" class="container">
+              <div id="navegadoritems" class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="../../index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <img src="../../img/icon.png" alt="Icono" id="icono">
+<!--                   <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg> -->                
+                </a>
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                  <li><a href="../../index.html" class="nav-link px-2 text-secondary">INICIO</a></li>
+                  <li><a href="../../pages/consolas.html" class="nav-link px-2 text-white">CONSOLAS</a></li>
+                  <li><a href="../../pages/noticias.html" class="nav-link px-2 text-white">NOTICIAS</a></li>
+                  <li><a href="../../pages/contacto.html" class="nav-link px-2 text-white">CONTACTO</a></li>
+                </ul>
+        
+                <form id="navegadorsearch" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                  <input type="search" class="form-control form-control-dark text-white bg-dark" placeholder="Buscar..." aria-label="Search">
+                </form>
+        
+                <div id="navegadorbtn" class="text-end">
+                  <button type="button" class="btnSesion" onclick="sesion()">INICIA SESIÓN</button>
+                  <button type="button" class="btnRegistro" onclick="registro()">REGISTRATE</button>
+                </div>
+              </div>
+            </div>
+          </header>
+<!------------ MAIN ------------>
+<main>
+  
+<!------------ ASIDE ------------>
+
+<aside>
+  <ul class="asideUl">
+    <a href="../../index.html"><li class="asideLi"><i class="fa-solid fa-house-chimney"></i> Inicio</li></a>
+    <li class="asideLi"  onclick="abrirMenu()"><i class="fa-solid fa-circle-play"></i> Consolas
+      <ul class="submenu" id="menuConsolas">
+        <a href="../../pages/nintendo/nintendo.html"><li class="asideLi"><i class="fa-solid fa-gamepad"></i> Nintendo</li></a>      
+        <a href="../../pages/microsoft/microsoft.html"><li class="asideLi"><i class="fa-brands fa-xbox"></i> Microsoft</li></a>        
+        <a href="../../pages/sony/sony.html"><li class="asideLi"><i class="fa-brands fa-playstation"></i> Sony</li></a>        
+        <a href="../../pages/pc/pc.html"><li class="asideLi"><i class="fa-solid fa-laptop"></i> PC</li></a>
+      </ul>
+    </li>
+    <a href="../../pages/noticias.html"><li  class="asideLi"><i class="fa-solid fa-newspaper"></i> Noticias</li></a>
+    <a href="../../pages/contacto.html"><li  class="asideLi"><i class="fa-solid fa-user-astronaut"></i> Contacto</li></a>
+  </ul>
+
+  <hr>
+  <ol>
+    <li class="asideIndex"><a href="#inventorPS">Inventor</a></li>
+    <li>Historia/Evolución
+    <ul>
+      <li class="asideIndex"><a href="#PS1">PS One</a></li>
+      <li class="asideIndex"><a href="#PS2">PS2</a></li>
+      <li class="asideIndex"><a href="#PS3">PS3</a></li>
+      <li class="asideIndex"><a href="#PS4">PS4</a></li>
+      <li class="asideIndex"><a href="#PS5">PS5</a></li>
+    </ul>
+    </li>
+      <li class="asideIndex"><a href="#portatilPS">Portátiles</a>
+        <ul>
+          <li class="asideIndex"><a href="#PSP">PSP</a></li>
+          <li class="asideIndex"><a href="#PSPGO">PSPGO</a></li>
+          <li class="asideIndex"><a href="#PSPStreet">PSP E1000</a></li>
+          <li class="asideIndex"><a href="#PSVita">PS Vita</a></li>
+          <li class="asideIndex"><a href="#PSTV">PS TV</a></li>
+        </ul>
+      </li>
+      <li class="asideIndex"><a href="#btn_tabla">Mascotas</a></li>
+  </ol>
+</aside>
+
+<!------------ SECTION ------------>
+
+  <section>
+    <h1>Playstation</h1>
+    <h2>El origen de PlayStation</h2>
+    <p>El origen del PlayStation es irónico. Por los «lejanos» años 90, Nintendo buscaba dar el paso gigante que lo consolidará como rey absoluto de los videojuegos.
+    <br>
+    Para lograr dicho objetivo, necesitaba pasar del cartucho al CD.
+    <br>
+    Para el desarrollo de este aditamento que leyera CD, Nintendo decidió aliarse con una empresa japonesa, Sony, donde se produciría el primer Nintendo PlayStation.
+    <br>
+    Sin embargo, mediante una serie de desacuerdos, Nintendo decidió romper acuerdos con Sony y en su lugar se alió con la compañía Philips, con la cual produjo el monumental fracaso conocido como Philips CD-i.
+    <br>
+    Por su parte, Sony quedaba solo con un prototipo del PlayStation que antes de su creación, no tenía interés en participar en el mercado de las video consolas.
+    <br>
+    Pero, con este proyecto comenzado, decidieron continuar con el desarrollo de esta consola la cual ya estaba en una etapa bastante avanzada. Fue así como Nintendo ayudo indirectamente a la creación del PlayStation.
+    </p>
+    <h3 id="inventorPS">¿Quién inventó el PlayStation?</h3>
+    <p>Ken Kutaragi invento la playstation <br>
+    Ken Kutaragi, el padre de la PlayStation. Crédito: Jacoplane en Wikimedia. <br>
+    El creador de PlayStation fue Ken Kutaragi, quien además hizo lo imposible para lanzar al mercado su proyecto, hecho que sucedió oficialmente a finales de 1994, obteniendo un rotundo éxito en ventas a nivel global estableciendo a la compañía Sony y a la marca PlayStation como importantes dentro de la industria. <br>
+    Las claves fueron las facilidades que Sony otorgó a sus desarrolladores y la inclusión del formato de CD que ampliaba las posibilidades de contenido.</p>
+    <h2 id="historiaPS">Historia y evolución de las consolas de PlayStation</h2>
+    <h4 id="PS1">La PlayStation One</h4>
+    <p>En el año 2000 el PlayStation vendría a ser sucedido por una versión más elegante, bonita, pequeña y potente que daría pie a la tradición de lanzar una versión mejorada años después.</p>
+    <h4 id="PS2">PlayStation 2</h4>
+    <p>La Playstation2 la cual sería completamente retro compatible con su antecesora, siendo esta característica una de sus mayores claves para triunfar frente a la competencia, además de que, en ese entonces, su precio era menor que el de un reproductor de DVD, siendo la Playstation2 compatible nativamente con este formato.
+    <br>
+    Hasta la actualidad sigue siendo la consola más vendida. El PlayStation 2 fue un éxito rotundo con más de 155 millones de copias vendidas globalmente, aunque Sony ya tuvo que competir con agentes titánicos para la sexta generación como lo fueron la GameCube de Nintendo, el Sega Dreamcast y hasta el recién llegado a la contienda: el Xbox de Microsoft.
+    <br>      
+    Lo que le terminó dando la ventaja competitiva frente a todas ellas fue su amplia biblioteca masiva de videojuegos con más de 2000 títulos.
+    <br>
+    Esta consola vino con títulos más populares que se encontraban Grand Theft Auto 3, Ville City y San Andreas, Final Fantasy 10, Kingdom Hearts1 y 2, God of War 1 y 2 y Gran Turísmo 3. </p>
+    <h5>PlayStation Slim</h5>
+    <p>En 2004 el PlayStation 2 recibiría el tratamiento reductivo de la línea con el PlayStation Slim un dispositivo más delgado, pequeño, estilizado menos ruidoso y con un puerto nativo Ethernet para poder jugar en línea.</p>
+    <h4 id="PS3">PlayStation 3</h4>
+    <p>Los juegos cada vez resultaban ser más exigentes y por eso Sony lanza un chip que presumía ser bastante poderoso, implementándolo en la PlayStation 3, esta vez haciendo uso del Blu-ray como fórmula principal.<br>
+    Esta consola vendió 80 millones de unidades, no tantas como su antecesora, pero nada despreciable sin duda. <br>
+    Tendría como competencia directa el Xbox 360 de Microsoft y el Wii de Nintendo.</p>
+    <h5>PlayStation 3 Slim</h5>
+    <p>En 2009 Sony lanzaba la versión Slim del PlayStation 3 la cual era más delgada, poderosa y consumía menos recursos mejorando considerablemente su recalentamiento y fue la primera en utilizar un nuevo logo de PlayStation pero no conforme en adelgazar el PlayStation 3 también adelgazaron el PlayStation Slim fue así que nació la versión del Súper Slim  en el año 2012 estableciendo estándares de belleza para las consolas.</p>
+    <h4 id="PS4">PlayStation 4</h4>
+    <p>Contra todo pronóstico, en 2013 fue lanzado el PlayStation 4 la cual vendió 1 millón de consolas en las primeras 24 horas. <br>  
+    Sony decidió mejorar funciones para compartir imágenes y videos de manera más sencilla, y cambió los clásicos botones de Select y Start que estaban presentes en todas las versiones anteriores por un botón que te permitía compartir información de manera inmediata: el Dualshock, que incluye una barra de luz, un botón central multifunción, un altavoz y un recubrimiento ergonómico especializado. <br>
+    Dentro de los juegos más destacados de la consola se encuentran Uncharted 4: A Thief’s End, Bloodborne, infamous second son, Spiderman y Horizon Zero Dawn. <br>
+    Cómo era de esperarse, el PlayStation 4 recibió su tratamiento reductivo y fue así como nació el PlayStation 4 Slim que ya no era tan ruidosa.</p>
+    <h4 id="PS5">PlayStation 5</h4>
+    <p>Llegando al mercado junto a sus contendientes principal de Microsoft , Sony ofrece la versión PlayStation digital la cual es una versión menos costosa sin lector de disco limitando sus juegos a la plataforma digital, y su versión regular: la PlayStation 5, la cual pude correr juegos en glorioso 8k y el DualSense, nombre de su nuevo control que tiene una respuesta háptica destacable. <br>
+    God of War Ragnarok, Spiderman Miles Morales y un rpg situado en el mundo de Harry Potter Hogwarts Legacy; son los principales exponentes para representar a esta consola.</p>
+    <h2 id="portatilPS">Portátiles de PlayStation</h2>
+    <h4 id="PSP">PSP: PlayStation Portable.</h4>
+    <p>Abreviatura de PlayStation Portable, fue la consola portátil por la cual Sony apostó para contratacar el mercado que dominaba Nintendo sin mayores problemas. <br> 
+    Aunque en un principio a la PSP le costó establecerse, poco a poco fue recibiendo títulos de gran calidad.
+    <h4 id="PSPGO">PSP GO</h4>
+    <p>Posteriormente Sony lanzo al mercado la PSPGO, la cual carecía de lector UMD y ofrecía 16 GB de almacenamiento y reducción de tamaño. </p>
+    <h4 id="PSPStreet">PSP E1000</h4>
+    <p>También conocido como PSPStreet, todo lo contrario a la anterior al contar con lector UMD, pero no así con Wi-Fi, teniendo además, menor calidad que sus antecesores.</p>
+    <h4 id="PSVita">PlayStation Vita</h4>
+    <p>En un principio, los usuarios la verían con buenos ojos debido al tropiezo inicial de Nintendo con la 3DS y aunque en un principio la Vita vendió bien, poco a poco sus ventas disminuyeron debido al poco apoyo de la misma Sony, aunque no es precisamente mala, no corrió con la misma suerte que su antecesora <br>
+    Sony lo intentaría de otra manera pero sin hacer mucho énfasis. Intentando mejorar las ventas de la Vita, trajeron nuevos equipos en presentaciones en diferentes colores pero ni eso le bastó para subir sus ventas.</p>
+    <h4 id="PSTV">PlayStation TV</h4>
+    <p>Una nueva revisión a la Vita Sony presentó la PlayStation TV como consola de sobremesa, el cual parecía un concepto interesante en el cual podrías jugar los juegos de la portátil en la tv, si no existiera la limitante de que no todos los juegos son compatibles y no es posible usar aplicaciones tan básicas como Netflix.</p>
+    
+    <button id="btn_tabla" class="btn_tabla" onclick="mostrarTabla()">Mostrar información</button>
+    <br>
+
+    <table id="tabla"  class="tabla">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Breve descripción</th>
+          <th>Imagen</th>
+        </tr>
+      </thead>
+      <tr>
+        <td><b>KRATOS</b></td>
+        <td>Kratos es el protagonista principal de todos los juegos de la saga <b>God of War</b>. Hijo del dios Zeus y Calisto, una mujer mortal, Kratos nació en Esparta, una ciudad griega que se caracterizaba por ser un pueblo guerrero.</td>
+        <td><img class="imgTable" src="https://cdn.fizgames.com/wp-content/uploads/2019/10/kratos2-297x300.jpg" alt="Kratos"></th>
+      </tr>
+      <tr>
+        <td><b>Sweet <br> Tooth</b></td>
+        <td>Sweet Tooth es el personaje principal de <b>Twisted Metal</b> . Como mascota del juego, su imagen es prestada para las carátulas y para varios elementos dentro del modo historia y del universo de Twisted Metal. Si bien dentro del juego, Sweet Tooth hace de nombre para ambos Needles Kane (como alias del conductor clásico de Sweet Tooth) o como el vehículo de este. En cuanto al vehículo, este es un camión de helados bastante lento y con una pésima maniobrabilidad (excepto en Twisted Metal 4 donde hace de jefe final), pero con una buena armadura y un muy potente ataque especial, lo que lo hace un competidor perfecto para ambientes cerrados o cuerpo a cuerpo contra numerosos enemigos, pero un blanco fácil en campo abierto.
+        </td>
+        <td><img class="imgTable" src="https://thecouch.world/wp-content/uploads/2019/05/clown-sweet-tooth-twisted-metal-hd-1080p-wallpaper_3f36_Easy-Resize.com_.jpg" alt="Sweet Tooth"></th>
+      </tr>
+      <tr>
+        <td><b>Ratchet <br> & <br> Clank</b></td>
+        <td><b>Ratchet & Clank</b> es una saga de videojuegos de plataformas para PlayStation (y existen versiones para teléfonos móviles). Fue creada por la compañía Insomniac Games en el año 2000, siendo Ratchet & Clank de PlayStation 2 el primer título de la franquicia.<br>
+        Los protagonistas son Ratchet, un mecánico lombax, amante de la acción y las aventuras, y Clank, un pequeño pero inteligente robot que Ratchet lleva acoplado a la espalda en sus aventuras. El jugador controla principalmente a Ratchet, mientras que Clank es utilizado directamente con menos frecuencia. La temática general del juego es la de ambos viajando por varios planetas ayudando en lo posible y reuniendo armas y artilugios con los que seguir avanzando y resolver el conflicto principal de cada videojuego.</td>
+        <td><img class="imgTable" src="http://d3ugyf2ht6aenh.cloudfront.net/stores/082/436/products/ratchet-and-clank1-994f5af5a1b7c2bc0316182485842634-640-0.jpg" alt="Ratchet & Clank"></th>
+      </tr>
+      <tr>
+        <td><b>Jak <br> and <br> Daxter</b></td>
+        <td><b>Jak and Daxter</b> es una serie de videojuegos creada por <b>Naughty Dog</b>. Hay tres juegos de la serie principal y tres spin-off, aunque estos también se consideran parte del argumento de la serie principal.<br>
+          Los juegos son considerados historia a base de juegos de plataformas, incluyendo muchos puzles que implican saltar, a veces junto con evitar enemigos, y en juegos posteriores, usando armas diferentes en estilo shooter en tercera persona. La historia se centra en Jak y Daxter, dos amigos que van a aventuras en lugares múltiples en un mundo de ficción, incluyendo selvas, volcanes, ciudades y desiertos. Jak es un joven de mediana estatura, pelo rubio verdoso y unas grandes orejas similar a la de los elfos. Daxter es una especie de comadreja de color naranja, de pequeño tamaño, que viaja siempre sobre el hombro de Jak.</td>
+        <td><img class="imgTable" src="https://image.api.playstation.com/cdn/UP9000/CUSA02522_00/o9zJoXqpd4lzarjIbvvZLFjYGLsLvqCp.png" alt="Jak and Daxter"></th>
+      </tr>
+      <tr>
+        <td><b>Sackboy <br> Sackgirl</b></td>
+        <td><b>LittleBigPlanet (LBP) </b> un videojuego de plataformas y de lógica cuyos escenarios son generados por los propios usuarios. Fue desarrollado por <b>Media Molecule</b>, una compañía británica fundada por Mark Healey, el creador de "Rag Doll Kung Fu" y publicado por Sony Computer Entertainment Europe.<br>
+        El juego gira en torno del control de pequeños avatares tipo muñeco llamados <b>sackboy o sackgirl</b> (debido a su apariencia), a lo largo de varios escenarios de plataforma. A pesar de que el juego presenta una serie de niveles prediseñados para la exploración por parte del jugador, de igual importancia es la naturaleza del juego personalizable, de alterar el personaje del jugador y el espacio personal para construir totalmente nuevos objetos y niveles para luego compartir y jugarlos en línea como parte de la comunidad LittleBigPlanet.</td>
+        <td><img class="imgTable" src="https://static-cdn.jtvnw.net/ttv-boxart/LittleBigPlanet.jpg" alt="LittleBigPlanet"></th>
+      </tr>
+    </table>
+  
+  </section>
+  </main>
+
+<!------------ FOOTER ------------>
+        <footer>
+            <div class="footer"></div>
+            <p>Alumno: Daniel Palau
+            <br>
+            Mail: palaudanny@gmail.com 
+            <br>
+            Comision E
+            <br>
+            Revolución Digital
+            </p>
+            </div>
+        </footer>
+    
+<!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="../../js/script.js"></script>
+</body>
+</html>

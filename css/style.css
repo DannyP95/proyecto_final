@@ -2,6 +2,7 @@
 
 body{
   background-color: rgb(102 102 102);
+  color: white;
 }
 /* ----------> BANNER <----------*/
 
@@ -32,26 +33,121 @@ body{
   margin: 0px 10px;
 }
 
+.btnSesion, .btnRegistro{
+  cursor: pointer;
+  font-family: cursive;
+  border-radius: 5px;
+  padding: 3px;
+  width: 150px;
+  height: 40px;
+}
+
+.btnRegistro{
+  background-color: white;
+  color: #212529;
+}
+
+.btnSesion{
+  background-color: yellow;
+  color: #212529;
+}
+
+
+
+
 /* ----------> MAIN <----------*/
 
-/* main{
-  background-color: rgb(0, 65, 102);
-} */
-
-/* section{
-
+main{
+  margin: 20px;
+  padding-bottom: 50px;
 }
+
+/* ----------> ASIDE <----------*/
 
 aside{
   
-} */
+  position: absolute;
+  background-color: #212529;
+  width: 200px;
+  border-style: double;
+  border-radius: 15px;
+  border-color: white;
+  margin-top: 15px;
+}
+
+#ulNav:hover{
+  color: lightseagreen;
+}
+
+aside .asideLi:hover{
+  color: lightseagreen;
+}
+
+aside ul{
+  margin: 10px;
+  list-style: none;
+}
+
+
+aside .submenu {
+  display: none;
+}
+
+aside a{
+  text-decoration: none;
+  color: white;
+}
+
+/* ----------> SECTION <----------*/
+
+section{
+  margin-left: 250px;
+}
+
+/* ----------> TABLE <----------*/
+
+.btn_tabla{
+  width: 100%;
+  background-color: #212529;
+  color: white;
+  border-color: #323232;
+}
+
+section .tabla{
+  display: none;
+}
+
+table{
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+  background-color: #323232;
+  color: white;
+}
+
+thead{
+  background-color: black;
+  color: white;
+  border-bottom: 10px solid #212529;
+}
+
+td, th{
+  border: 1px solid black;
+  padding: 20px;
+}
+
+table .imgTable{
+  width: 400px;
+  height: 400px;
+
+}
+
 
 /* ----------> FOOTER <----------*/
 footer{
   width: 100%;
   text-align: right;
-  position: fixed;
-  bottom: 0px;
+  padding: 1px;
   background-color: #212529;
   color: white;
 }
@@ -59,3 +155,40 @@ footer{
 footer p{
   margin: 10px 40px;
 }
+
+
+/* ----------> CONTACTO <----------*/
+
+form .divinput{
+  display: grid;
+}
+
+#botones{
+ display: grid;
+}
+
+#reset{
+  background-color: red;
+}
+
+#submit{
+  background-color: green;
+}
+
+/* ----------> Noticias <----------*/
+
+section .noticiasLink{
+  text-decoration: none;
+  color: white;
+}
+
+section .noticiasLink h3{
+  padding: 20px 0px;
+}
+
+section .noticiasLink:hover{
+  color:lightseagreen;
+}
+
+
+

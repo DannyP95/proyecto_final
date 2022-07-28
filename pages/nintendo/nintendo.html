@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/iconhead.png">
+    <link href="/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>NINTENDO</title>
+</head>
+<body>
+    
+    <header class="p-3 bg-dark text-white">
+        <div class="banner">
+            <img class="imgbanner" src="../../img/banner.png" alt="banner">
+        </div>    
+            <div id="navegador" class="container">
+              <div id="navegadoritems" class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="../../index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <img src="../../img/icon.png" alt="Icono" id="icono">
+<!--                   <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg> -->                
+                </a>
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                  <li><a href="../../index.html" class="nav-link px-2 text-secondary">INICIO</a></li>
+                  <li><a href="../../pages/consolas.html" class="nav-link px-2 text-white">CONSOLAS</a></li>
+                  <li><a href="../../pages/noticias.html" class="nav-link px-2 text-white">NOTICIAS</a></li>
+                  <li><a href="../../pages/contacto.html" class="nav-link px-2 text-white">CONTACTO</a></li>
+                </ul>
+        
+                <form id="navegadorsearch" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                  <input type="search" class="form-control form-control-dark text-white bg-dark" placeholder="Buscar..." aria-label="Search">
+                </form>
+        
+                <div id="navegadorbtn" class="text-end">
+                  <button type="button" class="btnSesion" onclick="sesion()">INICIA SESIÓN</button>
+                  <button type="button" class="btnRegistro" onclick="registro()">REGISTRATE</button>
+                </div>
+              </div>
+            </div>
+          </header>
+<!------------ MAIN ------------>
+<main>
+  
+<!------------ ASIDE ------------>
+
+<aside>
+  <ul class="asideUl">
+    <a href="../../index.html"><li class="asideLi"><i class="fa-solid fa-house-chimney"></i> Inicio</li></a>
+    <li class="asideLi"  onclick="abrirMenu()"><i class="fa-solid fa-circle-play"></i> Consolas
+      <ul class="submenu" id="menuConsolas">
+        <a href="../../pages/nintendo/nintendo.html"><li class="asideLi"><i class="fa-solid fa-gamepad"></i> Nintendo</li></a>      
+        <a href="../../pages/microsoft/microsoft.html"><li class="asideLi"><i class="fa-brands fa-xbox"></i> Microsoft</li></a>        
+        <a href="../../pages/sony/sony.html"><li class="asideLi"><i class="fa-brands fa-playstation"></i> Sony</li></a>        
+        <a href="../../pages/pc/pc.html"><li class="asideLi"><i class="fa-solid fa-laptop"></i> PC</li></a>
+      </ul>
+    </li>
+    <a href="../../pages/noticias.html"><li  class="asideLi"><i class="fa-solid fa-newspaper"></i> Noticias</li></a>
+    <a href="../../pages/contacto.html"><li  class="asideLi"><i class="fa-solid fa-user-astronaut"></i> Contacto</li></a>
+  </ul>
+
+  <hr>
+  <ol>
+    <li>Consolas
+    <ul>
+      <li class="asideIndex"><a href="#consolasN">Primeros éxitos</a></li>
+      <li class="asideIndex"><a href="#NES">NES</a></li>
+      <li class="asideIndex"><a href="#gameboy">GameBoy</a></li>
+      <li class="asideIndex"><a href="#SNES">SNES</a></li>
+      <li class="asideIndex"><a href="#virtual">Virtual Boy</a></li>
+      <li class="asideIndex"><a href="#n64">Nintendo 64</a></li>
+      <li class="asideIndex"><a href="#gamecube">Game Cube</a></li>
+      <li class="asideIndex"><a href="#gba">GameBoy Advance</a></li>
+      <li class="asideIndex"><a href="#DS">Nintendo DS</a></li>
+      <li class="asideIndex"><a href="#wii">Nintendo Wii</a></li>
+      <li class="asideIndex"><a href="#3ds">Nintendo 3DS</a></li>
+      <li class="asideIndex"><a href="#wiiU">Nintendo WiiU</a></li>
+      <li class="asideIndex"><a href="#NESClassic">NES (Nueva Versión)</a></li>
+      <li class="asideIndex"><a href="#switch">Switch</a></li> 
+      <li class="asideIndex"><a href="#SNESClassic">SNES (Nueva Versión)</a></li>
+      <li class="asideIndex"><a href="#switchLite">Switch Lite</a></li> 
+    </ul>
+    <li class="asideIndex"><a href="#btn_tabla">Mascotas</a></li>
+    </li>
+  </ol>
+</aside>
+
+<!------------ SECTION ------------>
+
+  <section>
+    <h1>Historia de la Gran N</h1>
+    <p>Aunque parezca raro, el origen de Nintendo fue un hombre que fabricaba cartas. Este hombre es el japonés Fusajiro Yamauchi, que comenzó a desarrollar esta labor en 1889. Sus barajas tuvieron tanto éxito que, en 1993, fundó la sociedad Yamauchi Nintendo Co. Ltd. para gestionar la venta de cartas. <br>
+    La empresa la heredó el yerno de Yamauchi, Sekiryo Kaneda, y, tras este, pasó a Hiroshi Yamauchi, bisnieto del fundador y uno de los presidentes más recordados de la historia de Nintendo. Estuvo en el cargo más de 50 años, de 1950 a 2002.</p>
+    <h2>El salto a los videojuegos</h2>
+    <p>En 1963, con Hiroshi Yamauchi ya como presidente, la compañía pasa a llamarse Nintendo Co., Ltd. y empieza su andadura en el mercado de los videojuegos. Uno de sus mayores éxitos fue el desarrollo, en 1973, de un sistema de disparo láser que se convirtió en la principal forma de entretenimiento para los japoneses. <br>
+    Fue en 1977 cuando la empresa comenzó a desarrollar videojuegos. De la mano de Mitsubishi Electric creó las primeras consolas domésticas: "TV Game 15" y "TV Game 6". Nintendo también desarrolló un videojuego basado en el popular juego de mesa Othello. En 1979, la compañía da el salto a EE.UU. e inaugura la sede de Nintendo of America Inc. en Nueva York. En Japón comienzan a venderse las portátiles "GAME & WATCH", que contienen un solo juego. </p>
+    <h2>Miyamoto empieza a hacer su magia</h2>
+    <p>En 1980, un joven Shigeru Miyamoto creó el juego “Donkey Kong” para máquinas arcade. Este fue un gran éxito en todo el mundo, lo que catapultó a la fama a Jumpman, el protagonista del juego. Este debía rescatar a Pauline de las garras del simio Donkey Kong. Posteriormente, Jumpman cambió su nombre a Mario, debido a su parecido físico con el dueño de las oficinas de la Gran N en Nueva York.</p>
+    <h2 id="consolasN">Llegan las consolas... y el éxito</h2>
+    <p>El éxito de Nintendo con “Donkey Kong” animó a la compañía a crear sus propias consolas para comercializar sus videojuegos y explotar sus licencias. En 1984 sale al mercado Famicom en Japón. El sistema llegaría a EE.UU. en 1985 y a Europa en 1986 con el nombre de NES (Nintendo Entertainment System), y sería un rotundo éxito. <br>
+    Esta consola fue la cuna que vio nacer a personajes tan populares como Link o Samus Aran con “The Legend of Zelda” y “Metroid”, respectivamente. No obstante, sin duda el estandarte principal de la Gran N fue Mario. El juego “Super Mario Bros.” hizo que el antiguo Jumpman se convirtiera en un fenómeno a nivel mundial. <br>
+    Tras este éxito, Nintendo se lanzó a conquistar también el mercado de las consolas portátiles con Game Boy, que salió en 1989 en Japón. A Europa llegó entre 1990 y 1991. Esta consola llegó con el juego “Tetris”, que fue otro bombazo rotundo a nivel mundial. Este éxito llevó a la creación, en 1990, de Nintendo of Europe, que estableció su sede en Alemania. En 1993 se establecieron filiales en países como Holanda, Francia, Reino Unido, España, Bélgica y Australia.</p>
+    <h4 id="NES">Nintendo Entertainment System (NES): 1983-1995</h4>
+    <p>próxima consola de Nintendo no necesita mucha presentación. La NES reproducía juegos de 8 bits y estaba diseñada para el hogar. Fue, con diferencia, la consola más vendida de su época, con más de 60 millones de unidades, y ayudó a Norteamérica a recuperarse de la crisis de los videojuegos de 1983, cuando demasiadas consolas inundaron el mercado y los ordenadores personales se hicieron más potentes.</p>
+    <h4 id="gameboy">Game Boy: 1989-2003</h4>    
+    <p>Otra de las mejores consolas de videojuegos de la historia es la Nintendo Game Boy. Pensada y diseñada por el mismo equipo que la Game & Watch, la Game Boy combinó las características de la primera portátil con cartuchos intercambiables como los de la NES para crear una de las consolas más vendidas de la historia. Las ventas de Game Boy y Game Boy Color (lanzada en 1998) se estiman en unos 120 millones de unidades.</p>
+    <h4 id="SNES">Super Nintendo Entertainment System (SNES): 1990-1998</h4>
+    <p>La segunda gran consola doméstica de Nintendo también fue un éxito arrollador, aunque tuvo una dura competencia con la Sega Mega Drive. La máquina de Sega fue la primera en salir al mercado, pero fue la gama de juegos de Nintendo la que la convirtió en la consola más vendida de la era de los 16 bits, con casi 50 millones de unidades vendidas en todo el mundo.<br>
+    Nintendo produjo diferentes versiones de la consola para distintos mercados, y la versión japonesa se llamó Super Famicom. Además, codificó los cartuchos de tal manera que no se podía jugar a los juegos de un país en una consola de otro.</p>
+    <h4 id="virtual">Virtual Boy: 1995-1996</h4>
+    <p>A la SNES le siguió un lanzamiento de consola extraño y finalmente desastroso, pero se la recuerda con cariño como la precursora de la realidad virtual en el hogar. <br>
+    El Virtual Boy se colocaba sobre una mesa o mueble y los jugadores tenían que inclinarse hacia el visor para jugar a los juegos en 3D. Desgraciadamente, en lugar de proporcionar una experiencia de la era espacial, la mayoría de los jugadores se sintieron mareados y el concepto fue archivado. Su vida útil se mide en meses, no en años, y nunca salió de Japón ni de Estados Unidos.</p>
+    <h4 id="n64">Nintendo 64 (N64): 1996-2003</h4>
+    <p>La N64 recibió su nombre de la CPU de 64 bits que utilizaba y fue la última consola doméstica de Nintendo que requería cartuchos. Tuvo mucho éxito cuando se lanzó, y muchos clientes se pelearon por hacerse con una y fue considerada la consola más potente de su generación. <br>
+    Desgraciadamente, tuvo que competir con la Sony PlayStation y la Sega Saturn, por lo que no pudo emular el éxito de sus predecesoras, y llegó a vender algo menos de 33 millones de unidades. Pero la N64 sigue pasando a la historia como una fantástica consola de juegos de Nintendo para los entendidos. <br>
+    Gran parte de su éxito se debe a los juegos: Super Mario 64, The Legend of Zelda: Ocarina of Time y Goldeneye 007 siguen considerándose algunos de los mejores títulos de la historia. </p>
+    <h4 id="gamecube">Nintendo GameCube: 2001-2007</h4>
+    <p>Nintendo recurrió al formato de disco óptico para la GameCube, pero tuvo que enfrentarse a la dura competencia de la Sony PlayStation 2, la Microsoft Xbox y la Sega Dreamcast. El progreso del juego podía guardarse en tarjetas de memoria, con tamaños que iban desde los 4MB hasta los 64MB, y el mando se rediseñó, pasando del modelo de tres asas de la N64 a uno de dos asas para la GameCube, pero no pudieron evitar que fuera un gran fracaso.</p>
+    <h4 id="gba">Game Boy Advance: 2001-2008</h4>
+    <p>Nintendo decidió actualizar su envejecido concepto de Game Boy con un modelo más potente, con mejores gráficos y una mayor gama de colores a disposición de los desarrolladores. <br>
+    La Game Boy Advance pasó por varios diseños en sus siete años de vida, con un retorno al estilo de concha de los dispositivos Game & Watch originales para la Game Boy Advance SP. Esa rareza en particular podría considerarse incluso el precursor de la Nintendo DS que llegaría poco después.</p>
+    <h4 id="DS">Nintendo DS: 2004-2014</h4>
+    <p>Aunque seguía adelante con nuevos diseños para la Game Boy Advance, Nintendo decidió renovar por completo su estrategia para las portátiles con el lanzamiento de la DS. <br>
+    Lo más importante es que introdujo una nueva e innovadora configuración de doble pantalla que evolucionó a partir de la Game & Watch original. La pantalla inferior contaba con una pantalla táctil y podía utilizarse para controlar los juegos, mientras que la superior era sólo una pantalla LCD para ver lo que se estaba haciendo.  <br>
+    Su principal rival era la PSP de Sony, pero gracias a la retrocompatibilidad con los juegos de Game Boy Advance y a un par de modelos evolucionados con mejores prestaciones y características, la línea DS se convirtió en la serie de consolas de juegos portátiles más vendida de la historia.</p>
+    <h4 id="wii">Nintendo Wii: 2006-2013</h4>
+    <p>La Wii fue la entrada de Nintendo en la séptima generación de consolas domésticas, enfrentándose a la temible competencia de la PlayStation 3 de Sony y la Xbox 360 de Microsoft. Sin embargo, durante algún tiempo lideró las cifras de ventas de las otras dos.  <br>
+    La Wii inauguró una nueva era de juegos de movimiento con el mando de Wii, que la consola seguía en el espacio tridimensional. Con el tiempo, también sacó a la venta la Wii Balance Board, que se utilizaba con los juegos de fitness. Su estilo familiar y sus lanzamientos de juegos la convirtieron en la máquina de salón más popular durante bastante tiempo.</p>
+    <h4 id="3ds">Nintendo 3DS: 2011- </h4>
+    <p>Para dar continuidad a su concepto de portátil DS, Nintendo recurrió a una tecnología visual muy popular en la época: 3D. Convirtió la pantalla superior de su dispositivo en una pantalla 3D, aunque a diferencia de la tecnología de imagen similar de los televisores y similares, no requería gafas. <br>
+    Para ser sinceros, la mayoría de la gente estaba decepcionada con la pantalla 3D y su rendimiento, pero eso no impidió que la 3DS se vendiera a montones. </p>
+    <h4 id="wiiU">Nintendo Wii U: 2012-2016 </h4>
+    <p>La Wii U fue la sucesora de la Wii y la respuesta de Nintendo a la PlayStation 4 y la Xbox One. Es la primera consola de Nintendo que admite gráficos de alta definición y se controla principalmente con el Wii U GamePad, dotado de pantalla táctil. <br>
+    Aunque la recepción inicial de la Wii U fue positiva, al final se ha considerado un fracaso de los juegos, ya que ha vendido poco más de 13 millones de unidades desde su lanzamiento. </p>
+    <h4 id="NESClassic">NES Classic Mini: 2016-2017</h4>
+    <p>Los juegos retro se han vuelto increíblemente populares y, antes de que la Nintendo Switch esté disponible a principios de 2017, el gigante japonés de los juegos ayudó a los jugadores jóvenes y mayores a volver a ver algunos de sus mejores juegos iniciales con una forma mini de la consola NES original. Contaba con 30 títulos de la Nintendo Entertainment System de la compañía y un mando de estilo auténtico pero con un moderno conector HDMI. <br>    
+    Con un enorme éxito, Nintendo vendió alrededor de 2,3 millones de la consola antes de que fuera descontinuada en 2017. Nintendo produjo una tirada limitada en 2018 para satisfacer la demanda restante. </p>
+    <h4 id="switch">Nintendo Switch: 2017- </h4>
+    <p>Y así llegamos a la Switch, que salió a la venta por primera vez en marzo de 2017. Se trata de un dispositivo similar a una tableta con pantalla táctil, además de una estación de acoplamiento para jugar en casa en un televisor. Así que es portátil para jugar fuera de casa, pero también puede funcionar en el hogar.
+    Los mandos Joy-Con son pequeñas almohadillas que se colocan a ambos lados de la pantalla. Y también se pueden encajar en una unidad de mando central para dar una mayor sensación de joypad a los procedimientos. <br>
+    A diferencia de la Wii U, la Switch ha tenido un éxito notable, con 79 millones de unidades vendidas hasta finales de 2020. También ha habido varias ediciones especiales, como la de Mario Rojo y Azul de 2021.
+    <h4 id="SNESClassic">Super NES Classic Edition: 2017-2018 </h4>
+    <p>Tras el éxito de la NES Classic Mini anterior, la Super NES Classic Edition se lanzó en 2017 y, al igual que la NES Classic Mini, tuvo mucho éxito. </p>
+    <h4 id="switchLite">Nintendo Switch Lite: 2019- </h4>
+    <p>La Switch Lite es una variante de la Switch sin los Joy-cons separados ni el dock que permite conectar la Switch a un televisor. </p>
+
+    <button id="btn_tabla" class="btn_tabla" onclick="mostrarTabla()">Mostrar información</button>
+    <br>
+    
+    <table id="tabla" class="tabla">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Breve descripción</th>
+          <th>Imagen</th>
+        </tr>
+      </thead>
+      <tr>
+        <td><b>Mario</b></td>
+        <td><b>Mario Bros</b> es un videojuego de arcade desarrollado por Nintendo en el año 1983. Fue creado por <b>Shigeru Miyamoto</b>. <br>
+        En el juego, Mario es retratado como un fontanero ítalo-estadounidense que, junto con su hermano menor Luigi, tiene que derrotar a las criaturas que han venido de las alcantarillas de Nueva York. El juego se centra en la exterminación de estas, volteándolas sobre sus espaldas y pateándolas.</td>
+        <td><img class="imgTable" src="https://i.pinimg.com/originals/3a/33/c1/3a33c11780a0cc4d69a8ff1f4d1095c4.png" alt="Mario"></th>
+      </tr>
+      <tr>
+        <td><b>Pikachu</b></td>
+        <td>Pikachu es un Pokémon de tipo eléctrico introducido en la primera generación. Es el Pokémon más conocido de la historia, mayormente por ser el acompañante del protagonista del anime, Ash Ketchum y la mascota representante de la franquicia <b>Pokémon</b>. Es el Pokémon inicial de Pokémon Amarillo y Pokémon: Let's Go Pikachu! A partir de la segunda generación, es la forma evolucionada de Pichu.</td>
+        <td><img class="imgTable" src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c325.png" alt="Pikachu"></th>
+      </tr>
+      <tr>
+        <td><b>Link</b></td>
+        <td><b>The Legend of Zelda</b> es una serie de videojuegos de acción-aventura creada por los diseñadores japoneses Shigeru Miyamoto y Takashi Tezuka, y desarrollada por Nintendo, empresa que también se encarga de su distribución internacional. Su trama por lo general describe las heroicas aventuras del joven guerrero <b>Link</b>, que debe enfrentarse a peligros y resolver acertijos para ayudar a la Princesa Zelda a derrotar a Ganondorf y salvar su hogar, el reino de Hyrule.</td>
+        <td><img class="imgTable" src="https://i.pinimg.com/originals/66/dd/df/66dddf26d73610f108c572102e70551a.png" alt="Link"></th>
+      </tr>
+      <tr>
+        <td><b>Samus</b></td>
+        <td>Samus Aran, es un personaje de videojuegos creado por Nintendo, protagonista de la saga de <b>Metroid</b>, siendo introducida en el primer videojuego de 1986.<br>
+        Samus se presenta como una exsoldado de la Federación Galáctica que se convirtió en una cazarrecompensas. Generalmente equipada con un exoesqueleto de potencia,(denominado “Traje de Poder” (Power Suit en inglés)), el cual está equipado con diferentes armas de energía, misiles u otro material de apoyo. A lo largo de la serie, realiza diversas misiones que la Federación Galáctica le encomienda mientras caza a los Piratas Espaciales y su líder Ridley, junto con los organismos parásitos que drenan la energía de los seres vivos llamados Metroids.</td>
+        <td><img class="imgTable" src="https://cdn.atomix.vg/wp-content/uploads/2018/11/250px-Samus_SSBU.png" alt="Samus"></th>
+      </tr>
+      <tr>
+        <td><b>Donkey <br> Kong</b></td>
+        <td><b>Donkey Kong</b> es un personaje ficticio diseñado por Shigeru Miyamoto. Es un gorila y aparece en los videojuegos que pertenecen a las franquicias de videojuegos de Donkey Kong y Mario. Debido a su popularidad, ha aparecido en muchos videojuegos. Donkey Kong fue el primer oponente de Mario en el videojuego del mismo nombre, el videojuego de arcade de Nintendo Donkey Kong de 1981. Desde entonces, ha protagonizado su propia serie de videojuegos, comenzando con Donkey Kong Country en 1994 para Super Nintendo Entertainment System, y sigue siendo un personaje importante en los videojuegos derivados de la serie de Mario, como Mario Kart y Mario vs. Donkey Kong.</td>
+        <td><img class="imgTable" src="https://wizarddojo.files.wordpress.com/2015/11/dkiswii.png" alt="Donkey Kong"></th>
+      </tr>
+    </table>
+
+    </section>
+  </main>
+
+<!------------ FOOTER ------------>
+        <footer>
+            <div class="footer"></div>
+            <p>Alumno: Daniel Palau
+            <br>
+            Mail: palaudanny@gmail.com 
+            <br>
+            Comision E
+            <br>
+            Revolución Digital
+            </p>
+            </div>
+        </footer>
+    
+<!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="../../js/script.js"></script>
+</body>
+</html>
