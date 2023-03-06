@@ -1,9 +1,12 @@
 function abrirMenu() {
+    var flechaCambiar = document.getElementById("flechaConsolas");
     var abrirMenuDesplegable = document.getElementById("menuConsolas");
-    if (abrirMenuDesplegable.style.display === "none") {
-        abrirMenuDesplegable.style.display = "block";
-    } else {
+    if (abrirMenuDesplegable.style.display === "block") {
         abrirMenuDesplegable.style.display = "none";
+        flechaCambiar.style.transform = "rotate(0deg)";
+    } else {
+        abrirMenuDesplegable.style.display = "block";        
+        flechaCambiar.style.transform = "rotate(180deg)";
     }
 }
 
@@ -38,7 +41,11 @@ function sesion(){
 
 function registro(){
     let nombre = prompt("Ingrese su nombre");
-    window.alert("Bienvenido "+ nombre);
+        if (nombre == ""){
+            window.alert("Por Favor Ingrese su nombre")
+        }else{
+            window.alert("Bienvenido "+ nombre);
+        }
 }
 
 function mostrarTabla() {
@@ -51,4 +58,26 @@ function mostrarTabla() {
         tabla.style.display = "block";
         boton.innerHTML = "Ocultar información"
     }
+}
+
+let ubicacionStart = window.pageYOffset;
+window.onscroll = function scroll(){
+    let asideMenu = document.getElementById("asideId");
+    let claseOriginal = document.getElementById('navegador');
+    let mainPadding = document.getElementById("mainId");
+    let ubicacionEnd = window.pageYOffset;
+
+    if (ubicacionEnd >= 246){ 
+        claseOriginal.classList.remove('container');
+        claseOriginal.classList.add('navegadorScroll');
+        mainPadding.classList.add("mainTop");
+        asideMenu.classList.add("asideClass");
+
+    }else{
+        claseOriginal.classList.remove('navegadorScroll');
+        mainPadding.classList.remove("mainTop");
+        claseOriginal.classList.add('container');
+        asideMenu.classList.remove("asideClass");
+    }
+
 }

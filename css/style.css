@@ -25,8 +25,21 @@ body{
   height: 32px;
 }
 
-#navegador{
+.container{
   max-inline-size:inherit;
+}
+
+.navegadorScroll{
+  width: 100%;
+  top: 0;
+  position: fixed;
+  background-color: #212529;
+  z-index: 10;  
+  max-inline-size:inherit;
+  left: 0;
+  padding: 12px;
+  margin-bottom: 500px;
+  transition: 1s;
 }
 
 #navegadoritems{
@@ -62,10 +75,13 @@ main{
   padding-bottom: 50px;
 }
 
+.mainTop{
+  margin-block-start: 80px;
+}
+
 /* ----------> ASIDE <----------*/
 
 aside{
-  
   position: absolute;
   background-color: #212529;
   width: 200px;
@@ -79,24 +95,52 @@ aside{
   color: lightseagreen;
 }
 
+aside .asideLi{
+  padding-left: 10px;
+}
+
 aside .asideLi:hover{
   color: lightseagreen;
+  cursor: pointer;
+  background-color: black;
+  transition: 0.5s;
+  border-radius: 15px;
+}
+
+.asideClass{
+  position: fixed;
+  top: 75px;
 }
 
 aside ul{
   margin: 10px;
   list-style: none;
+  margin-left: -10px;
 }
-
 
 aside .submenu {
   display: none;
+  padding-bottom: 10px;
+  transition: 5s;
 }
+
+.liConsolas {
+  transition: 4s;
+}
+
+aside .submenu li:hover {
+  background-color: #212529;
+  }
 
 aside a{
   text-decoration: none;
   color: white;
 }
+
+.flechaClass{
+  margin-left: 45px;
+}
+
 
 /* ----------> SECTION <----------*/
 
